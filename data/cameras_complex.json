@@ -1,0 +1,355 @@
+{
+  "complexity_level": "complex",
+  "num_attributes": 11,
+  "attributes": [
+    "price_usd",
+    "image_quality_score",
+    "battery_life_hours",
+    "optical_zoom_x",
+    "weight_grams",
+    "ease_of_use_score",
+    "has_manual_controls",
+    "raw_format_support",
+    "burst_speed_fps",
+    "weather_sealed",
+    "video_resolution_4k"
+  ],
+  "attribute_descriptions": {
+    "price_usd": "Price in US dollars",
+    "image_quality_score": "Image quality on a scale of 1-10 as rated by independent reviewers",
+    "battery_life_hours": "Battery life in hours of continuous shooting",
+    "optical_zoom_x": "Optical zoom level (e.g., 10x means 10 times optical magnification)",
+    "weight_grams": "Camera weight in grams (body only)",
+    "ease_of_use_score": "Ease of use on a scale of 1-10 based on user testing with first-time camera buyers",
+    "has_manual_controls": "Whether the camera has full manual controls (aperture, shutter speed, ISO) \u2014 Yes or No",
+    "raw_format_support": "Whether the camera can save photos in RAW format for post-processing \u2014 Yes or No",
+    "burst_speed_fps": "Continuous burst shooting speed in frames per second",
+    "weather_sealed": "Whether the camera body is sealed against dust and moisture \u2014 Yes or No",
+    "video_resolution_4k": "Whether the camera can record video in 4K resolution \u2014 Yes or No"
+  },
+  "attribute_direction": {
+    "price_usd": "lower_is_better",
+    "image_quality_score": "higher_is_better",
+    "battery_life_hours": "higher_is_better",
+    "optical_zoom_x": "higher_is_better",
+    "weight_grams": "lower_is_better",
+    "ease_of_use_score": "higher_is_better",
+    "has_manual_controls": "higher_is_better",
+    "raw_format_support": "higher_is_better",
+    "burst_speed_fps": "higher_is_better",
+    "weather_sealed": "higher_is_better",
+    "video_resolution_4k": "higher_is_better"
+  },
+  "pairs": [
+    {
+      "pair_id": 1,
+      "camera_a": {
+        "name": "Veloxa C4",
+        "price_usd": 399,
+        "image_quality_score": 7,
+        "battery_life_hours": 20,
+        "optical_zoom_x": 15,
+        "weight_grams": 260,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      },
+      "camera_b": {
+        "name": "Strikon R7",
+        "price_usd": 699,
+        "image_quality_score": 9,
+        "battery_life_hours": 8,
+        "optical_zoom_x": 3,
+        "weight_grams": 560,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 10,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      }
+    },
+    {
+      "pair_id": 2,
+      "camera_a": {
+        "name": "Vextra U1",
+        "price_usd": 749,
+        "image_quality_score": 9,
+        "battery_life_hours": 7,
+        "optical_zoom_x": 2,
+        "weight_grams": 580,
+        "ease_of_use_score": 4,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 12,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      },
+      "camera_b": {
+        "name": "Strion V2",
+        "price_usd": 399,
+        "image_quality_score": 7,
+        "battery_life_hours": 18,
+        "optical_zoom_x": 14,
+        "weight_grams": 255,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      }
+    },
+    {
+      "pair_id": 3,
+      "camera_a": {
+        "name": "Lumara W3",
+        "price_usd": 379,
+        "image_quality_score": 7,
+        "battery_life_hours": 9,
+        "optical_zoom_x": 16,
+        "weight_grams": 250,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      },
+      "camera_b": {
+        "name": "Nordox X4",
+        "price_usd": 649,
+        "image_quality_score": 9,
+        "battery_life_hours": 19,
+        "optical_zoom_x": 3,
+        "weight_grams": 545,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 9,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      }
+    },
+    {
+      "pair_id": 4,
+      "camera_a": {
+        "name": "Cryotek Y5",
+        "price_usd": 689,
+        "image_quality_score": 9,
+        "battery_life_hours": 17,
+        "optical_zoom_x": 2,
+        "weight_grams": 555,
+        "ease_of_use_score": 4,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 11,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      },
+      "camera_b": {
+        "name": "Fenris Z6",
+        "price_usd": 349,
+        "image_quality_score": 7,
+        "battery_life_hours": 13,
+        "optical_zoom_x": 18,
+        "weight_grams": 245,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      }
+    },
+    {
+      "pair_id": 5,
+      "camera_a": {
+        "name": "Promex C9",
+        "price_usd": 399,
+        "image_quality_score": 7,
+        "battery_life_hours": 18,
+        "optical_zoom_x": 14,
+        "weight_grams": 255,
+        "ease_of_use_score": 4,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      },
+      "camera_b": {
+        "name": "Nexora D1",
+        "price_usd": 699,
+        "image_quality_score": 9,
+        "battery_life_hours": 9,
+        "optical_zoom_x": 3,
+        "weight_grams": 560,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 11,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      }
+    },
+    {
+      "pair_id": 6,
+      "camera_a": {
+        "name": "Harvon A7",
+        "price_usd": 679,
+        "image_quality_score": 9,
+        "battery_life_hours": 8,
+        "optical_zoom_x": 3,
+        "weight_grams": 565,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 10,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "Yes"
+      },
+      "camera_b": {
+        "name": "Zelphar B8",
+        "price_usd": 369,
+        "image_quality_score": 7,
+        "battery_life_hours": 17,
+        "optical_zoom_x": 16,
+        "weight_grams": 250,
+        "ease_of_use_score": 4,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "No"
+      }
+    },
+    {
+      "pair_id": 7,
+      "camera_a": {
+        "name": "Solmax E2",
+        "price_usd": 369,
+        "image_quality_score": 7,
+        "battery_life_hours": 20,
+        "optical_zoom_x": 15,
+        "weight_grams": 250,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "Yes"
+      },
+      "camera_b": {
+        "name": "Wovica F3",
+        "price_usd": 669,
+        "image_quality_score": 9,
+        "battery_life_hours": 9,
+        "optical_zoom_x": 3,
+        "weight_grams": 570,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 10,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "No"
+      }
+    },
+    {
+      "pair_id": 8,
+      "camera_a": {
+        "name": "Quarno G4",
+        "price_usd": 719,
+        "image_quality_score": 9,
+        "battery_life_hours": 9,
+        "optical_zoom_x": 3,
+        "weight_grams": 550,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 9,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "No"
+      },
+      "camera_b": {
+        "name": "Drinax H5",
+        "price_usd": 409,
+        "image_quality_score": 7,
+        "battery_life_hours": 18,
+        "optical_zoom_x": 13,
+        "weight_grams": 265,
+        "ease_of_use_score": 8,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "Yes"
+      }
+    },
+    {
+      "pair_id": 9,
+      "camera_a": {
+        "name": "Orbexo I6",
+        "price_usd": 379,
+        "image_quality_score": 7,
+        "battery_life_hours": 19,
+        "optical_zoom_x": 14,
+        "weight_grams": 255,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 10,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "No"
+      },
+      "camera_b": {
+        "name": "Lumoxo J7",
+        "price_usd": 649,
+        "image_quality_score": 9,
+        "battery_life_hours": 8,
+        "optical_zoom_x": 3,
+        "weight_grams": 560,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "Yes"
+      }
+    },
+    {
+      "pair_id": 10,
+      "camera_a": {
+        "name": "Cosmex K8",
+        "price_usd": 689,
+        "image_quality_score": 9,
+        "battery_life_hours": 8,
+        "optical_zoom_x": 3,
+        "weight_grams": 565,
+        "ease_of_use_score": 5,
+        "has_manual_controls": "Yes",
+        "raw_format_support": "Yes",
+        "burst_speed_fps": 3,
+        "weather_sealed": "No",
+        "video_resolution_4k": "Yes"
+      },
+      "camera_b": {
+        "name": "Aerixo L9",
+        "price_usd": 399,
+        "image_quality_score": 7,
+        "battery_life_hours": 19,
+        "optical_zoom_x": 14,
+        "weight_grams": 260,
+        "ease_of_use_score": 9,
+        "has_manual_controls": "No",
+        "raw_format_support": "No",
+        "burst_speed_fps": 10,
+        "weather_sealed": "Yes",
+        "video_resolution_4k": "No"
+      }
+    }
+  ]
+}
