@@ -1,5 +1,5 @@
-{
-  "complexity_level": "simple",
+{ 
+  "complexity_level": "simple", 
   "num_attributes": 3,
   "attributes": [
     "price_usd",

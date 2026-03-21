@@ -1,1 +1,1 @@
-Repo to collaborate on CS568 Project
+Repo to collaborate on CS568 Project.

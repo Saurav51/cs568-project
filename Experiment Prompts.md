@@ -52,7 +52,7 @@ The attributes are:
 Return your ranking as a numbered list, with one attribute name per line, from most important (1) to least important. Use the exact attribute names as shown above (the part before the colon).
 
 Example format:
-1. attribute_name
+1. attribute_name 
 2. attribute_name
 3. attribute_name
 
