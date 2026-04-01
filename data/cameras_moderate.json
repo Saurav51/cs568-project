@@ -1,5 +1,5 @@
 {
-  "complexity_level": "moderate", 
+  "complexity_level": "moderate",
   "num_attributes": 6,
   "attributes": [
     "price_usd",
@@ -28,211 +28,269 @@
   "pairs": [
     {
       "pair_id": 1,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["price_usd", "image_quality_score"],
+        "camera_a_wins_on": "price_usd",
+        "camera_b_wins_on": "image_quality_score"
+      },
       "camera_a": {
         "name": "Vexon A1",
-        "price_usd": 349,
-        "image_quality_score": 7,
-        "battery_life_hours": 16,
-        "optical_zoom_x": 10,
-        "weight_grams": 280,
-        "ease_of_use_score": 9
+        "price_usd": 299,
+        "image_quality_score": 6,
+        "battery_life_hours": 14,
+        "optical_zoom_x": 8,
+        "weight_grams": 350,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Strela B2",
-        "price_usd": 549,
+        "price_usd": 499,
         "image_quality_score": 9,
-        "battery_life_hours": 9,
-        "optical_zoom_x": 3,
-        "weight_grams": 480,
-        "ease_of_use_score": 6
+        "battery_life_hours": 15,
+        "optical_zoom_x": 8,
+        "weight_grams": 340,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 2,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["price_usd", "ease_of_use_score"],
+        "camera_a_wins_on": "price_usd",
+        "camera_b_wins_on": "ease_of_use_score"
+      },
       "camera_a": {
         "name": "Lumix C3",
-        "price_usd": 559,
-        "image_quality_score": 9,
-        "battery_life_hours": 10,
-        "optical_zoom_x": 2,
-        "weight_grams": 510,
+        "price_usd": 289,
+        "image_quality_score": 8,
+        "battery_life_hours": 14,
+        "optical_zoom_x": 8,
+        "weight_grams": 350,
         "ease_of_use_score": 5
       },
       "camera_b": {
         "name": "Norda D4",
-        "price_usd": 349,
-        "image_quality_score": 7,
-        "battery_life_hours": 17,
+        "price_usd": 489,
+        "image_quality_score": 8,
+        "battery_life_hours": 15,
         "optical_zoom_x": 8,
-        "weight_grams": 290,
-        "ease_of_use_score": 8
+        "weight_grams": 340,
+        "ease_of_use_score": 9
       }
     },
     {
       "pair_id": 3,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["image_quality_score", "ease_of_use_score"],
+        "camera_a_wins_on": "image_quality_score",
+        "camera_b_wins_on": "ease_of_use_score"
+      },
       "camera_a": {
         "name": "Cryon E5",
-        "price_usd": 329,
-        "image_quality_score": 7,
-        "battery_life_hours": 14,
-        "optical_zoom_x": 12,
-        "weight_grams": 270,
-        "ease_of_use_score": 9
+        "price_usd": 399,
+        "image_quality_score": 9,
+        "battery_life_hours": 15,
+        "optical_zoom_x": 8,
+        "weight_grams": 350,
+        "ease_of_use_score": 5
       },
       "camera_b": {
         "name": "Fenic F6",
-        "price_usd": 519,
-        "image_quality_score": 9,
-        "battery_life_hours": 19,
-        "optical_zoom_x": 3,
-        "weight_grams": 495,
-        "ease_of_use_score": 5
+        "price_usd": 409,
+        "image_quality_score": 6,
+        "battery_life_hours": 14,
+        "optical_zoom_x": 8,
+        "weight_grams": 340,
+        "ease_of_use_score": 9
       }
     },
     {
       "pair_id": 4,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["image_quality_score", "weight_grams"],
+        "camera_a_wins_on": "image_quality_score",
+        "camera_b_wins_on": "weight_grams"
+      },
       "camera_a": {
         "name": "Harvo G7",
-        "price_usd": 489,
+        "price_usd": 399,
         "image_quality_score": 9,
-        "battery_life_hours": 18,
-        "optical_zoom_x": 4,
-        "weight_grams": 495,
-        "ease_of_use_score": 5
+        "battery_life_hours": 14,
+        "optical_zoom_x": 8,
+        "weight_grams": 490,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Zelph H8",
-        "price_usd": 319,
-        "image_quality_score": 7,
-        "battery_life_hours": 12,
-        "optical_zoom_x": 11,
-        "weight_grams": 270,
-        "ease_of_use_score": 9
+        "price_usd": 409,
+        "image_quality_score": 6,
+        "battery_life_hours": 15,
+        "optical_zoom_x": 8,
+        "weight_grams": 260,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 5,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["battery_life_hours", "weight_grams"],
+        "camera_a_wins_on": "battery_life_hours",
+        "camera_b_wins_on": "weight_grams"
+      },
       "camera_a": {
         "name": "Promo I9",
-        "price_usd": 329,
+        "price_usd": 399,
         "image_quality_score": 7,
-        "battery_life_hours": 16,
-        "optical_zoom_x": 4,
-        "weight_grams": 265,
-        "ease_of_use_score": 8
+        "battery_life_hours": 20,
+        "optical_zoom_x": 8,
+        "weight_grams": 480,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Nexar J1",
-        "price_usd": 519,
-        "image_quality_score": 9,
-        "battery_life_hours": 11,
-        "optical_zoom_x": 13,
-        "weight_grams": 495,
-        "ease_of_use_score": 5
+        "price_usd": 389,
+        "image_quality_score": 7,
+        "battery_life_hours": 10,
+        "optical_zoom_x": 9,
+        "weight_grams": 260,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 6,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["image_quality_score", "optical_zoom_x"],
+        "camera_a_wins_on": "image_quality_score",
+        "camera_b_wins_on": "optical_zoom_x"
+      },
       "camera_a": {
         "name": "Solan K2",
-        "price_usd": 519,
+        "price_usd": 409,
         "image_quality_score": 9,
-        "battery_life_hours": 10,
-        "optical_zoom_x": 13,
-        "weight_grams": 495,
-        "ease_of_use_score": 5
+        "battery_life_hours": 14,
+        "optical_zoom_x": 3,
+        "weight_grams": 350,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Wovic L3",
-        "price_usd": 329,
-        "image_quality_score": 7,
-        "battery_life_hours": 16,
-        "optical_zoom_x": 4,
-        "weight_grams": 265,
-        "ease_of_use_score": 8
+        "price_usd": 399,
+        "image_quality_score": 6,
+        "battery_life_hours": 15,
+        "optical_zoom_x": 15,
+        "weight_grams": 340,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 7,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["ease_of_use_score", "battery_life_hours"],
+        "camera_a_wins_on": "ease_of_use_score",
+        "camera_b_wins_on": "battery_life_hours"
+      },
       "camera_a": {
         "name": "Quarn M4",
-        "price_usd": 319,
-        "image_quality_score": 7,
-        "battery_life_hours": 14,
-        "optical_zoom_x": 4,
-        "weight_grams": 265,
-        "ease_of_use_score": 8
+        "price_usd": 399,
+        "image_quality_score": 8,
+        "battery_life_hours": 10,
+        "optical_zoom_x": 8,
+        "weight_grams": 340,
+        "ease_of_use_score": 9
       },
       "camera_b": {
         "name": "Drina N5",
-        "price_usd": 529,
-        "image_quality_score": 9,
-        "battery_life_hours": 19,
-        "optical_zoom_x": 13,
-        "weight_grams": 495,
+        "price_usd": 409,
+        "image_quality_score": 8,
+        "battery_life_hours": 20,
+        "optical_zoom_x": 8,
+        "weight_grams": 350,
         "ease_of_use_score": 5
       }
     },
     {
       "pair_id": 8,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["price_usd", "weight_grams"],
+        "camera_a_wins_on": "price_usd",
+        "camera_b_wins_on": "weight_grams"
+      },
       "camera_a": {
         "name": "Orbis O6",
-        "price_usd": 519,
-        "image_quality_score": 9,
-        "battery_life_hours": 18,
-        "optical_zoom_x": 12,
-        "weight_grams": 495,
-        "ease_of_use_score": 5
+        "price_usd": 289,
+        "image_quality_score": 7,
+        "battery_life_hours": 14,
+        "optical_zoom_x": 8,
+        "weight_grams": 480,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Lumox P7",
-        "price_usd": 329,
+        "price_usd": 489,
         "image_quality_score": 7,
-        "battery_life_hours": 12,
-        "optical_zoom_x": 4,
-        "weight_grams": 265,
-        "ease_of_use_score": 8
+        "battery_life_hours": 15,
+        "optical_zoom_x": 8,
+        "weight_grams": 260,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 9,
+      "tradeoff": {
+        "type": "conflict",
+        "attributes": ["price_usd", "optical_zoom_x"],
+        "camera_a_wins_on": "price_usd",
+        "camera_b_wins_on": "optical_zoom_x"
+      },
       "camera_a": {
         "name": "Cosma Q8",
-        "price_usd": 299,
-        "image_quality_score": 9,
-        "battery_life_hours": 10,
-        "optical_zoom_x": 3,
-        "weight_grams": 485,
-        "ease_of_use_score": 5
+        "price_usd": 279,
+        "image_quality_score": 8,
+        "battery_life_hours": 14,
+        "optical_zoom_x": 4,
+        "weight_grams": 350,
+        "ease_of_use_score": 7
       },
       "camera_b": {
         "name": "Aerix R9",
-        "price_usd": 519,
-        "image_quality_score": 7,
-        "battery_life_hours": 16,
-        "optical_zoom_x": 11,
-        "weight_grams": 260,
-        "ease_of_use_score": 9
+        "price_usd": 499,
+        "image_quality_score": 8,
+        "battery_life_hours": 15,
+        "optical_zoom_x": 16,
+        "weight_grams": 340,
+        "ease_of_use_score": 7
       }
     },
     {
       "pair_id": 10,
+      "tradeoff": {
+        "type": "dominance",
+        "dominant_camera": "camera_a"
+      },
       "camera_a": {
         "name": "Pixar S1",
-        "price_usd": 519,
-        "image_quality_score": 7,
-        "battery_life_hours": 18,
-        "optical_zoom_x": 11,
+        "price_usd": 289,
+        "image_quality_score": 9,
+        "battery_life_hours": 19,
+        "optical_zoom_x": 14,
         "weight_grams": 260,
         "ease_of_use_score": 9
       },
       "camera_b": {
         "name": "Macra T2",
-        "price_usd": 299,
-        "image_quality_score": 9,
-        "battery_life_hours": 11,
-        "optical_zoom_x": 4,
-        "weight_grams": 480,
+        "price_usd": 509,
+        "image_quality_score": 6,
+        "battery_life_hours": 10,
+        "optical_zoom_x": 3,
+        "weight_grams": 490,
         "ease_of_use_score": 5
       }
     }
