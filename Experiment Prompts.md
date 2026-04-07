@@ -2,18 +2,20 @@
 
 ## Structure
 
-Each **session** = one conversation covering all 10 pairs for a single persona + complexity level:
+Each **session** = one conversation covering all 15 pairs across all three complexity levels for a single persona:
 
 1. **System prompt** — sets the persona (once per session)
-2. **Turn 1** — priority ranking (once per session, before seeing any cameras)
-3. **Turns 2–11** — one camera choice per pair (10 turns, presented one at a time)
+2. **Turn 1** — priority ranking of all 11 attributes (once per session, before seeing any cameras)
+3. **Turns 2–6** — 5 simple pairs (3 attributes each, one per turn)
+4. **Turns 7–11** — 5 moderate pairs (6 attributes each, one per turn)
+5. **Turns 12–16** — 5 complex pairs (11 attributes each, one per turn)
 
-Total sessions: **2 personas × 3 complexity levels = 6 sessions per run**.
-Repeat all 6 sessions N times (e.g., 5 runs = 30 sessions total) for statistical power.
+Total sessions: **2 personas = 2 sessions per run**.
+Repeat N times (e.g., 30 runs = 60 sessions total) for statistical power.
 
-The priority ranking from Turn 1 is shared across all 10 pairs in that session — it is elicited once and applies to every choice in that conversation.
+The priority ranking from Turn 1 covers all 11 attributes and is shared across all 15 pairs in that session. Because each pair shows a different attribute subset (3, 6, or 11 attributes), the same ranking is used to evaluate all of them — the complexity level controls how many attributes are visible per pair, not which attributes are ranked.
 
-> **Note:** Because all 10 pairs share one conversation, earlier pairs may influence later ones (order effects). Keep pair order fixed (pair 1 → 10) across all sessions so any order effects are consistent and controllable.
+> **Note:** Because all 15 pairs share one conversation, earlier pairs may influence later ones (order effects). Keep pair order fixed and complexity order fixed (simple → moderate → complex) across all sessions so any order effects are consistent and controllable.
 
 ---
 
@@ -41,45 +43,12 @@ You do not know technical photography terms like aperture, ISO, shutter speed, R
 
 ## Step 2 — Turn 1: Priority Ranking
 
-Send this as the **first user message** of the session, before showing any cameras. Replace `[ATTRIBUTE LIST]` with the list for the complexity level (see below).
+Send this as the **first user message** of the session, before showing any cameras. The attribute list is always the full set of 11 attributes, regardless of complexity level.
 
 ```
 You are considering purchasing a new digital camera. Before seeing any specific products, please rank the following camera attributes from most to least important based on YOUR personal priorities.
 
 The attributes are:
-[ATTRIBUTE LIST]
-
-Return your ranking as a numbered list, with one attribute name per line, from most important (1) to least important. Use the exact attribute names as shown above (the part before the colon).
-
-Example format:
-1. attribute_name 
-2. attribute_name
-3. attribute_name
-
-Your ranked list:
-```
-
-### Attribute lists by complexity level
-
-**Simple (3 attributes):**
-```
-  - price_usd: Price in US dollars
-  - image_quality_score: Image quality on a scale of 1-10 as rated by independent reviewers
-  - battery_life_hours: Battery life in hours of continuous shooting
-```
-
-**Moderate (6 attributes):**
-```
-  - price_usd: Price in US dollars
-  - image_quality_score: Image quality on a scale of 1-10 as rated by independent reviewers
-  - battery_life_hours: Battery life in hours of continuous shooting
-  - optical_zoom_x: Optical zoom level (e.g., 10x means 10 times optical magnification)
-  - weight_grams: Camera weight in grams (body only)
-  - ease_of_use_score: Ease of use on a scale of 1-10 based on user testing with first-time camera buyers
-```
-
-**Complex (11 attributes):**
-```
   - price_usd: Price in US dollars
   - image_quality_score: Image quality on a scale of 1-10 as rated by independent reviewers
   - battery_life_hours: Battery life in hours of continuous shooting
@@ -91,13 +60,22 @@ Your ranked list:
   - burst_speed_fps: Continuous burst shooting speed in frames per second
   - weather_sealed: Whether the camera body is sealed against dust and moisture — Yes or No
   - video_resolution_4k: Whether the camera can record video in 4K resolution — Yes or No
+
+Return your ranking as a numbered list, with one attribute name per line, from most important (1) to least important. Use the exact attribute names as shown above (the part before the colon).
+
+Example format:
+1. attribute_name 
+2. attribute_name
+3. attribute_name
+
+Your ranked list:
 ```
 
 ---
 
-## Steps 3–12 — Turns 2–11: Camera Pairs (one per turn)
+## Steps 3–17 — Turns 2–16: Camera Pairs (one per turn)
 
-After receiving the priority ranking, present pairs one at a time. Replace `[CAMERA A SPECS]`, `[CAMERA B SPECS]`, and the camera names for each pair.
+After receiving the priority ranking, present all 15 pairs one at a time in order: 5 simple pairs (Turns 2–6), then 5 moderate pairs (Turns 7–11), then 5 complex pairs (Turns 12–16). Replace `[CAMERA A SPECS]` and `[CAMERA B SPECS]` with the attributes listed in each pair's `pair_attributes` field.
 
 ```
 Based on your priority ranking above, evaluate this next pair of cameras.
