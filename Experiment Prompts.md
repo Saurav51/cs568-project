@@ -4,14 +4,14 @@
 
 Each **session** = one conversation covering all 15 pairs across all three complexity levels for a single persona:
 
-1. **System prompt** — sets the persona (once per session)
+1. **System prompt** — sets the persona (once per session, drawn from `data/personas.py`)
 2. **Turn 1** — priority ranking of all 11 attributes (once per session, before seeing any cameras)
 3. **Turns 2–6** — 5 simple pairs (3 attributes each, one per turn)
 4. **Turns 7–11** — 5 moderate pairs (6 attributes each, one per turn)
 5. **Turns 12–16** — 5 complex pairs (11 attributes each, one per turn)
 
-Total sessions: **2 personas = 2 sessions per run**.
-Repeat N times (e.g., 30 runs = 60 sessions total) for statistical power.
+Total sessions per run: **14** (7 expert personas + 7 novice personas, defined in `data/personas.py`).
+Repeat N times per persona for statistical power.
 
 The priority ranking from Turn 1 covers all 11 attributes and is shared across all 15 pairs in that session. Because each pair shows a different attribute subset (3, 6, or 11 attributes), the same ranking is used to evaluate all of them — the complexity level controls how many attributes are visible per pair, not which attributes are ranked.
 
@@ -21,23 +21,15 @@ The priority ranking from Turn 1 covers all 11 attributes and is shared across a
 
 ## Step 1 — Set the System Prompt
 
-Paste this as the **system prompt** before starting each session.
+System prompts for all 14 personas live in `data/personas.py`. For each session, load the persona dict and use its `system_prompt` field verbatim as the conversation's system message. Each persona dict has:
 
-### Expert persona
+- `id` — persona identifier (e.g., `EXP_01`, `NOV_03`)
+- `name` — persona's name
+- `label` — `expert` or `novice`
+- `background` — one-line description
+- `system_prompt` — the full system prompt text
 
-```
-You are an experienced photographer with over 10 years of shooting experience. You own three cameras: a full-frame DSLR, a mirrorless system camera, and a compact travel camera. You have purchased camera gear multiple times in the past two years and actively follow photography communities and review sites.
-
-You understand technical concepts like aperture, ISO, shutter speed, depth of field, RAW format, burst shooting speed, weather sealing, and lens ecosystems. You shoot in a variety of conditions including low light, outdoor events, and studio settings. You edit your photos in post-processing software and have published work in online galleries and local exhibitions.
-```
-
-### Novice persona
-
-```
-You are a casual photographer who primarily uses your smartphone camera. You have never owned a dedicated camera and have no experience evaluating camera specifications. You take photos at family events, vacations, and social gatherings.
-
-You do not know technical photography terms like aperture, ISO, shutter speed, RAW format, or burst speed. You have never read a camera review or visited a photography forum. When friends discuss camera gear, the conversation feels overwhelming and unfamiliar. You have occasionally thought about buying a dedicated camera as a gift or for a trip but have never followed through.
-```
+Do not mix content across personas or edit prompts at run time — each session must use one persona's `system_prompt` exactly as defined.
 
 ---
 
