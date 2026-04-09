@@ -1,0 +1,305 @@
+[
+  {
+    "persona_id": "EXP_04",
+    "persona_name": "Sofia Rosenberg",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "battery_life_hours",
+      "raw_format_support",
+      "image_quality_score",
+      "optical_zoom_x",
+      "weight_grams",
+      "ease_of_use_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "price_usd"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "decisive_attribute": "Image quality",
+        "raw_response": "Choice: Brikon S2\nDecisive attribute: Image quality"
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "Ease of use",
+        "raw_response": "Choice: Claro M3  \nDecisive attribute: Ease of use"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "Battery life",
+        "raw_response": "Choice: Evoq R5  \nDecisive attribute: Battery life"
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "Image quality",
+        "raw_response": "Choice: Grivax N7  \nDecisive attribute: Image quality"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "Ease of Use",
+        "raw_response": "Choice: Invar D2  \nDecisive attribute: Ease of Use"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "A",
+        "decisive_attribute": "Battery life",
+        "raw_response": "Choice: Kolvex A1  \nDecisive attribute: Battery life"
+      },
+      "2": {
+        "choice": "",
+        "decisive_attribute": "Image Quality",
+        "raw_response": "Choice: Lumion B2  \nDecisive attribute: Image Quality"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "Battery Life",
+        "raw_response": "Choice: Optek E5  \nDecisive attribute: Battery Life"
+      },
+      "4": {
+        "choice": "B",
+        "decisive_attribute": "Image Quality",
+        "raw_response": "Choice: Ralvon H8  \nDecisive attribute: Image Quality"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "Battery Life",
+        "raw_response": "Choice: Sovex I9  \nDecisive attribute: Battery Life"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "2": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "3": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "Battery Life",
+        "raw_response": "Choice: Aelox Q8  \nDecisive attribute: Battery Life"
+      },
+      "5": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": "Based on the priority ranking above, evaluate this next pair of cameras:\n\nCamera A:\n- Price in US dollars: $389\n- Image quality on a scale of 1-10 as rated by independent reviewers: 8\n- Battery life in hours of continuous shooting: 13\n- Optical zoom level (e.g., 10x means 10 times optical magnification): 5\n- Camera weight in grams (body only): 230\n- Ease of use on a scale of 1-10 based on user testing with first-time camera buyers: 8\n- Whether the camera has full manual controls (aperture, shutter speed, ISO) — Yes or No: No\n- Whether the camera can save photos in RAW format for post-processing — Yes or No: No\n- Continuous burst shooting speed in frames per second: 9\n- Whether the camera body is sealed against dust and moisture — Yes or No: No\n- Whether the camera can record video in 4K resolution — Yes or No: No\n\nCamera B:\n- Price in US dollars: $419\n- Image quality on a scale of 1-10 as rated by independent reviewers: 6\n- Battery life in hours of continuous shooting: 19\n- Optical zoom level (e.g., 10x means 10 times optical magnification): 11\n- Camera weight in grams (body only): 490\n- Ease of use on a scale of 1-10 based on user testing with first-time camera buyers: 6\n- Whether the camera has full manual controls (aperture, shutter speed, ISO) — Yes or No: Yes\n- Whether the camera can save photos in RAW format for post-processing — Yes or No: Yes\n- Continuous burst shooting speed in frames per second: 4\n- Whether the camera body is sealed against dust and moisture — Yes or No: Yes\n- Whether the camera can record video in 4K resolution — Yes or No: Yes\n\nWhich camera do you choose? Reply in exactly this format:\n\nChoice: [camera name"
+      }
+    },
+    "priority_order_raw": "Here's a ranked list of camera attributes based on Sofia's priorities:\n\n1. **battery_life_hours**  \n2. **raw_format_support**  \n3. **image_quality_score**  \n4. **optical_zoom_x**  \n5. **weight_grams**  \n6. **ease_of_use_score**  \n7. **has_manual_controls**  \n8. **weather_sealed**  \n9. **burst_speed_fps**  \n10. **video_resolution_4k**"
+  },
+  {
+    "persona_id": "EXP_05",
+    "persona_name": "Riku Tanaka",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "image_quality_score",
+      "burst_speed_fps",
+      "weight_grams",
+      "optical_zoom_x",
+      "has_manual_controls",
+      "battery_life_hours",
+      "raw_format_support",
+      "ease_of_use_score",
+      "weather_sealed",
+      "video_resolution_4k",
+      "price_usd"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "decisive_attribute": "burst_speed_fps",
+        "raw_response": "Choice: Alvex T1  \nDecisive attribute: burst_speed_fps"
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Claro M3  \nDecisive attribute: image_quality_score"
+      },
+      "3": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Based on your personal priorities, the evaluation of the two cameras is as follows:\n\n**Grivax N7:**\n- Image quality score: 9\n- Burst speed fps: 10\n\n**Helion Q8:**\n- Image quality score: 6\n- Burst speed fps: 3\n\nGiven that image quality and burst speed are your top priorities, **Grivax N7** is the better choice due to its superior image quality and higher burst speed.\n\n**Choice:** Grivax N7  \n**Decisive attribute:** Image quality_score"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "burst_speed_fps",
+        "raw_response": "**Choice:** Invar D2  \n**Decisive attribute:** Burst_speed_fps"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "A",
+        "decisive_attribute": " Weight in grams (body only",
+        "raw_response": "**Choice:** Kolvex A1  \n**Decisive attribute:** Weight in grams (body only)"
+      },
+      "2": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Based on the evaluation of the two cameras:\n\n**Choice:** Noxar D4  \n**Decisive attribute:** Image Quality Score"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "**Choice:** Optek E5  \n**Decisive attribute:** Image Quality Score"
+      },
+      "4": {
+        "choice": "B",
+        "decisive_attribute": "burst_speed_fps",
+        "raw_response": "**Choice:** Ralvon H8  \n**Decisive attribute:** Burst Speed fps"
+      },
+      "5": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Trevon J1  \nDecisive attribute: Image Quality Score"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Vantrix L3  \nDecisive attribute: Image Quality Score"
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "**Choice:** Wovex M4  \n**Decisive attribute:** Image Quality Score"
+      },
+      "3": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "4": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Based on your priority ranking above, evaluate this next pair of cameras.\n\n**Choice:** Bryntex R9  \n**Decisive attribute:** Image Quality Score"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "**Choice:** Corvex S1  \n**Decisive attribute:** Image Quality Score"
+      }
+    },
+    "priority_order_raw": "1. image_quality_score  \n2. burst_speed_fps  \n3. weight_grams  \n4. optical_zoom_x  \n5. has_manual_controls  \n6. battery_life_hours  \n7. raw_format_support  \n8. ease_of_use_score  \n9. weather_sealed  \n10. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_06",
+    "persona_name": "Amara Osei",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "raw_format_support",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "image_quality_score",
+      "weight_grams",
+      "has_manual_controls",
+      "weather_sealed",
+      "video_resolution_4k",
+      "price_usd",
+      "optical_zoom_x",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Brikon S2  \nDecisive attribute: image_quality_score"
+      },
+      "2": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Dunox P4  \nDecisive attribute: image_quality_score"
+      },
+      "3": {
+        "choice": "B",
+        "decisive_attribute": "Burst speed",
+        "raw_response": "Choice: Fluma K6  \nDecisive attribute: Burst speed"
+      },
+      "4": {
+        "choice": "B",
+        "decisive_attribute": "raw_format_support",
+        "raw_response": "Choice: Helion Q8  \nDecisive attribute: Raw Format Support"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": " Weight",
+        "raw_response": "Based on the evaluation of the two cameras, considering factors like weight and ease of use alongside raw format support and burst speed (which were not provided for both cameras), **Camera A: Invar D2** is chosen due to its lighter weight and higher ease of use.\n\n**Choice:** Invar D2  \n**Decisive attribute:** Weight"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "Image quality",
+        "raw_response": "Choice: Mavrix C3  \nDecisive attribute: Image quality"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "Image quality",
+        "raw_response": "Choice: Optek E5  \nDecisive attribute: Image quality"
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "Image quality",
+        "raw_response": "Based on the analysis of the two cameras:\n\n**Choice: Quasar G7**  \n**Decisive attribute: Image quality**\n\nThe decision is made because Quasar G7 offers a better balance between battery life and image quality compared to Ralvon H8."
+      },
+      "5": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "",
+        "decisive_attribute": " Continuous burst shooting speed in frames per second",
+        "raw_response": "After carefully evaluating both cameras based on the key attributes, **Camera A** is chosen due to its superior continuous burst shooting speed.\n\n**Choice:** Camera A  \n**Decisive attribute:** Continuous burst shooting speed in frames per second"
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": " Image quality on a scale of 1-10 as rated by independent reviewers",
+        "raw_response": "**Choice:** Wovex M4  \n**Decisive attribute:** Image quality on a scale of 1-10 as rated by independent reviewers"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "raw_format_support",
+        "raw_response": "Based on the evaluation of both cameras according to your priority ranking:\n\n**Choice:** Yvax O6  \n**Decisive attribute:** Raw Format Support"
+      },
+      "4": {
+        "choice": "B",
+        "decisive_attribute": " Image quality on a scale of 1-10 as rated by independent reviewers",
+        "raw_response": "Based on Amara's priority ranking above, **Camera B** was chosen because it offers higher image quality and supports RAW format saving, which are critical for her needs.\n\n**Choice:** Bryntex R9  \n**Decisive attribute:** Image quality on a scale of 1-10 as rated by independent reviewers"
+      },
+      "5": {
+        "choice": "",
+        "decisive_attribute": "raw_format_support",
+        "raw_response": "**Choice:** Camera B  \n**Decisive attribute:** Raw Format Support"
+      }
+    },
+    "priority_order_raw": "1. raw_format_support  \n2. burst_speed_fps  \n3. manual_controls  \n4. battery_life_hours  \n5. image_quality_score  \n6. weight_grams  \n7. has_manual_controls  \n8. weather_sealed  \n9. video_resolution_4k  \n10. price_usd"
+  }
+]
