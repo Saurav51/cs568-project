@@ -1,0 +1,103 @@
+[
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "image_quality_score",
+      "battery_life_hours",
+      "ease_of_use_score",
+      "optical_zoom_x",
+      "raw_format_support",
+      "has_manual_controls",
+      "weight_grams",
+      "burst_speed_fps",
+      "weather_sealed",
+      "video_resolution_4k",
+      "price_usd"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "decisive_attribute": "battery_life_hours",
+        "raw_response": "Choice: Alvex T1  \nDecisive attribute: battery_life_hours"
+      },
+      "2": {
+        "choice": "B",
+        "decisive_attribute": "has_manual_controls",
+        "raw_response": "Choice: Dunox P4  \nDecisive attribute: has_manual_controls"
+      },
+      "3": {
+        "choice": "B",
+        "decisive_attribute": "battery_life_hours",
+        "raw_response": "Choice: Fluma K6  \nDecisive attribute: battery_life_hours"
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Grivax N7  \nDecisive attribute: Image quality score"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "Price",
+        "raw_response": "Choice: Invar D2  \nDecisive attribute: Price"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "",
+        "decisive_attribute": "",
+        "raw_response": ""
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Mavrix C3  \nDecisive attribute: Image quality score"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Optek E5  \nDecisive attribute: Image quality score"
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Quasar G7  \nDecisive attribute: Image quality score"
+      },
+      "5": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Trevon J1  \nDecisive attribute: Image quality score"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Vantrix L3  \nDecisive attribute: Image quality score"
+      },
+      "2": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Wovex M4  \nDecisive attribute: Image quality score"
+      },
+      "3": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Based on the evaluation focusing on the highest priority attributes:\n\nChoice: Yvax O6  \nDecisive attribute: Image quality score"
+      },
+      "4": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Choice: Aelox Q8  \nDecisive attribute: Image quality score"
+      },
+      "5": {
+        "choice": "A",
+        "decisive_attribute": "image_quality_score",
+        "raw_response": "Based on your prioritization above, the **image quality** score is the most important factor for you.\n\nChoice: Corvex S1  \nDecisive attribute: Image quality score"
+      }
+    },
+    "priority_order_raw": "1. image_quality_score  \n2. battery_life_hours  \n3. ease_of_use_score  \n4. optical_zoom_x  \n5. raw_format_support  \n6. has_manual_controls  \n7. weight_grams  \n8. burst_speed_fps  \n9. weather_sealed  \n10. video_resolution_4k"
+  }
+]
