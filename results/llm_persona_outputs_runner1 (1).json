@@ -1,0 +1,88 @@
+[
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a professional wedding and portrait photographer:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  }
+]
