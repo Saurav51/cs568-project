@@ -1,0 +1,2582 @@
+[
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "raw_format_support",
+      "has_manual_controls",
+      "image_quality_score",
+      "weather_sealed",
+      "battery_life_hours",
+      "price_usd",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my professional experience as a wedding and portrait photographer:\n\n1.  raw_format_support\n2.  has_manual_controls\n3.  image_quality_score\n4.  weather_sealed\n5.  battery_life_hours\n6.  price_usd\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 2,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "ease_of_use_score",
+      "weight_grams",
+      "video_resolution_4k",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of those camera attributes from most to least important, based on my professional priorities as a wedding and portrait photographer:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  burst_speed_fps\n8.  ease_of_use_score\n9.  weight_grams\n10. video_resolution_4k\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 3,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "ease_of_use_score",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my experience as a wedding and portrait photographer:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  ease_of_use_score\n7.  battery_life_hours\n8.  burst_speed_fps\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 4,
+    "priority_order": [
+      "raw_format_support",
+      "has_manual_controls",
+      "image_quality_score",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here are my personal priorities for a new camera, ranked from most to least important:\n\n1.  raw_format_support\n2.  has_manual_controls\n3.  image_quality_score\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 5,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "ease_of_use_score",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "weight_grams",
+      "video_resolution_4k",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a professional wedding and portrait photographer in Chicago:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  ease_of_use_score\n7.  battery_life_hours\n8.  burst_speed_fps\n9.  weight_grams\n10. video_resolution_4k\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 6,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "price_usd",
+      "weather_sealed",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "ease_of_use_score",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a professional wedding and portrait photographer:\n\n1. raw_format_support\n2. image_quality_score\n3. has_manual_controls\n4. price_usd\n5. weather_sealed\n6. battery_life_hours\n7. burst_speed_fps\n8. video_resolution_4k\n9. weight_grams\n10. ease_of_use_score\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 7,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here are my priorities for a new camera, ranked from most to least important:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 8,
+    "priority_order": [
+      "raw_format_support",
+      "has_manual_controls",
+      "image_quality_score",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "ease_of_use_score",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a professional wedding and portrait photographer:\n\n1.  raw_format_support\n2.  has_manual_controls\n3.  image_quality_score\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  burst_speed_fps\n8.  ease_of_use_score\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 9,
+    "priority_order": [
+      "raw_format_support",
+      "image_quality_score",
+      "has_manual_controls",
+      "weather_sealed",
+      "price_usd",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "ease_of_use_score",
+      "video_resolution_4k",
+      "weight_grams",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here are my priorities for a new camera, ranked from most to least important:\n\n1.  raw_format_support\n2.  image_quality_score\n3.  has_manual_controls\n4.  weather_sealed\n5.  price_usd\n6.  battery_life_hours\n7.  burst_speed_fps\n8.  ease_of_use_score\n9.  video_resolution_4k\n10. weight_grams\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_01",
+    "persona_name": "Marcus Chen",
+    "persona_label": "expert",
+    "generation_id": 10,
+    "priority_order": [
+      "raw_format_support",
+      "has_manual_controls",
+      "image_quality_score",
+      "weather_sealed",
+      "price_usd",
+      "ease_of_use_score",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "weight_grams",
+      "video_resolution_4k",
+      "optical_zoom_x"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of those camera attributes from most to least important, based on my professional priorities as a wedding and portrait photographer:\n\n1.  raw_format_support\n2.  has_manual_controls\n3.  image_quality_score\n4.  weather_sealed\n5.  price_usd\n6.  ease_of_use_score\n7.  battery_life_hours\n8.  burst_speed_fps\n9.  weight_grams\n10. video_resolution_4k\n11. optical_zoom_x"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "has_manual_controls",
+      "image_quality_score",
+      "raw_format_support",
+      "optical_zoom_x",
+      "battery_life_hours",
+      "weight_grams",
+      "price_usd",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Evoq R5"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Grivax N7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  has_manual_controls\n4.  image_quality_score\n5.  raw_format_support\n6.  optical_zoom_x\n7.  battery_life_hours\n8.  weight_grams\n9.  price_usd\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 2,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "image_quality_score",
+      "has_manual_controls",
+      "raw_format_support",
+      "optical_zoom_x",
+      "weight_grams",
+      "price_usd",
+      "battery_life_hours",
+      "ease_of_use_score",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Evoq R5"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Grivax N7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  image_quality_score\n4.  has_manual_controls\n5.  raw_format_support\n6.  optical_zoom_x\n7.  weight_grams\n8.  price_usd\n9.  battery_life_hours\n10. ease_of_use_score\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 3,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "image_quality_score",
+      "has_manual_controls",
+      "raw_format_support",
+      "battery_life_hours",
+      "price_usd",
+      "optical_zoom_x",
+      "weight_grams",
+      "ease_of_use_score",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Evoq R5"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Grivax N7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes, from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  image_quality_score\n4.  has_manual_controls\n5.  raw_format_support\n6.  battery_life_hours\n7.  price_usd\n8.  optical_zoom_x\n9.  weight_grams\n10. ease_of_use_score\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 4,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "raw_format_support",
+      "has_manual_controls",
+      "image_quality_score",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "price_usd",
+      "weight_grams",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "priority_order_raw": "Here are my priorities for a new digital camera, ranked from most to least important:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  raw_format_support\n4.  has_manual_controls\n5.  image_quality_score\n6.  battery_life_hours\n7.  optical_zoom_x\n8.  price_usd\n9.  weight_grams\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 5,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "image_quality_score",
+      "has_manual_controls",
+      "raw_format_support",
+      "price_usd",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "weight_grams",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Brikon S2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Grivax N7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  image_quality_score\n4.  has_manual_controls\n5.  raw_format_support\n6.  price_usd\n7.  battery_life_hours\n8.  optical_zoom_x\n9.  weight_grams\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 6,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "image_quality_score",
+      "has_manual_controls",
+      "raw_format_support",
+      "battery_life_hours",
+      "price_usd",
+      "weight_grams",
+      "optical_zoom_x",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Evoq R5"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Grivax N7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here are my priorities for a new camera, ranked from most to least important:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  image_quality_score\n4.  has_manual_controls\n5.  raw_format_support\n6.  battery_life_hours\n7.  price_usd\n8.  weight_grams\n9.  optical_zoom_x\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 7,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "has_manual_controls",
+      "image_quality_score",
+      "raw_format_support",
+      "optical_zoom_x",
+      "battery_life_hours",
+      "weight_grams",
+      "price_usd",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "priority_order_raw": "Here are my camera attribute priorities, ranked from most to least important for my work as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  has_manual_controls\n4.  image_quality_score\n5.  raw_format_support\n6.  optical_zoom_x\n7.  battery_life_hours\n8.  weight_grams\n9.  price_usd\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 8,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "has_manual_controls",
+      "image_quality_score",
+      "raw_format_support",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "weight_grams",
+      "price_usd",
+      "video_resolution_4k",
+      "ease_of_use_score"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  has_manual_controls\n4.  image_quality_score\n5.  raw_format_support\n6.  battery_life_hours\n7.  optical_zoom_x\n8.  weight_grams\n9.  price_usd\n10. video_resolution_4k\n11. ease_of_use_score"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 9,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "image_quality_score",
+      "has_manual_controls",
+      "raw_format_support",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "weight_grams",
+      "price_usd",
+      "ease_of_use_score",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Ralvon H8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes, from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  image_quality_score\n4.  has_manual_controls\n5.  raw_format_support\n6.  battery_life_hours\n7.  optical_zoom_x\n8.  weight_grams\n9.  price_usd\n10. ease_of_use_score\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_02",
+    "persona_name": "Priya Nair",
+    "persona_label": "expert",
+    "generation_id": 10,
+    "priority_order": [
+      "weather_sealed",
+      "burst_speed_fps",
+      "has_manual_controls",
+      "image_quality_score",
+      "raw_format_support",
+      "battery_life_hours",
+      "price_usd",
+      "optical_zoom_x",
+      "weight_grams",
+      "ease_of_use_score",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a wildlife and nature photographer:\n\n1.  weather_sealed\n2.  burst_speed_fps\n3.  has_manual_controls\n4.  image_quality_score\n5.  raw_format_support\n6.  battery_life_hours\n7.  price_usd\n8.  optical_zoom_x\n9.  weight_grams\n10. ease_of_use_score\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 1,
+    "priority_order": [
+      "has_manual_controls",
+      "weight_grams",
+      "raw_format_support",
+      "price_usd",
+      "image_quality_score",
+      "ease_of_use_score",
+      "weather_sealed",
+      "battery_life_hours",
+      "burst_speed_fps",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Alvex T1"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Invar D2"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes, from most to least important, based on my priorities as a street and documentary photographer:\n\n1.  has_manual_controls\n2.  weight_grams\n3.  raw_format_support\n4.  price_usd\n5.  image_quality_score\n6.  ease_of_use_score\n7.  weather_sealed\n8.  battery_life_hours\n9.  burst_speed_fps\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 2,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "image_quality_score",
+      "price_usd",
+      "weather_sealed",
+      "weight_grams",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here's my ranking of those camera attributes, from most to least important for my work:\n\n1.  has_manual_controls\n2.  raw_format_support\n3.  image_quality_score\n4.  price_usd\n5.  weather_sealed\n6.  weight_grams\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 3,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "price_usd",
+      "weight_grams",
+      "image_quality_score",
+      "weather_sealed",
+      "burst_speed_fps",
+      "ease_of_use_score",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here's my ranking of camera attributes, from most to least important for my work:\n\n1. has_manual_controls\n2. raw_format_support\n3. price_usd\n4. weight_grams\n5. image_quality_score\n6. weather_sealed\n7. burst_speed_fps\n8. ease_of_use_score\n9. battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 4,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "image_quality_score",
+      "weight_grams",
+      "ease_of_use_score",
+      "weather_sealed",
+      "price_usd",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of those camera attributes, from most to least important:\n\n1.  has_manual_controls\n2.  raw_format_support\n3.  image_quality_score\n4.  weight_grams\n5.  ease_of_use_score\n6.  weather_sealed\n7.  price_usd\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 5,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "price_usd",
+      "weight_grams",
+      "image_quality_score",
+      "weather_sealed",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Evoq R5"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Drylon T2"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of those camera attributes, from most to least important to me:\n\n1.  has_manual_controls\n2.  raw_format_support\n3.  price_usd\n4.  weight_grams\n5.  image_quality_score\n6.  weather_sealed\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 6,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "image_quality_score",
+      "weight_grams",
+      "price_usd",
+      "weather_sealed",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Joltex C3"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here's my ranking of those camera attributes, from most to least important for me:\n\n1. has_manual_controls\n2. raw_format_support\n3. image_quality_score\n4. weight_grams\n5. price_usd\n6. weather_sealed\n7. ease_of_use_score\n8. burst_speed_fps\n9. battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 7,
+    "priority_order": [
+      "has_manual_controls",
+      "weight_grams",
+      "raw_format_support",
+      "price_usd",
+      "image_quality_score",
+      "weather_sealed",
+      "burst_speed_fps",
+      "ease_of_use_score",
+      "optical_zoom_x",
+      "battery_life_hours",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Fluma K6"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Invar D2"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here's my ranked list of camera attributes, from most to least important:\n\n1. has_manual_controls\n2. weight_grams\n3. raw_format_support\n4. price_usd\n5. image_quality_score\n6. weather_sealed\n7. burst_speed_fps\n8. ease_of_use_score\n9. optical_zoom_x\n10. battery_life_hours\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 8,
+    "priority_order": [
+      "has_manual_controls",
+      "weight_grams",
+      "ease_of_use_score",
+      "raw_format_support",
+      "weather_sealed",
+      "image_quality_score",
+      "price_usd",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Invar D2"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of camera attributes from most to least important, based on my priorities as a street and documentary photographer:\n\n1.  has_manual_controls\n2.  weight_grams\n3.  ease_of_use_score\n4.  raw_format_support\n5.  weather_sealed\n6.  image_quality_score\n7.  price_usd\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 9,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "price_usd",
+      "weight_grams",
+      "image_quality_score",
+      "weather_sealed",
+      "ease_of_use_score",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Camera B"
+      }
+    },
+    "priority_order_raw": "Here is my ranking of those camera attributes from most to least important, based on my priorities as a street and documentary photographer:\n\n1.  has_manual_controls\n2.  raw_format_support\n3.  price_usd\n4.  weight_grams\n5.  image_quality_score\n6.  weather_sealed\n7.  ease_of_use_score\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  },
+  {
+    "persona_id": "EXP_03",
+    "persona_name": "Jordan Blake",
+    "persona_label": "expert",
+    "generation_id": 10,
+    "priority_order": [
+      "has_manual_controls",
+      "raw_format_support",
+      "weight_grams",
+      "ease_of_use_score",
+      "image_quality_score",
+      "price_usd",
+      "weather_sealed",
+      "burst_speed_fps",
+      "battery_life_hours",
+      "optical_zoom_x",
+      "video_resolution_4k"
+    ],
+    "simple": {
+      "1": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Dunox P4"
+      },
+      "3": {
+        "choice": "A",
+        "raw_response": "Choice: Camera A"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Helion Q8"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Invar D2"
+      }
+    },
+    "moderate": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Lumion B2"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Noxar D4"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Pryvex F6"
+      },
+      "4": {
+        "choice": "A",
+        "raw_response": "Choice: Quasar G7"
+      },
+      "5": {
+        "choice": "B",
+        "raw_response": "Choice: Trevon J1"
+      }
+    },
+    "complex": {
+      "1": {
+        "choice": "B",
+        "raw_response": "Choice: Vantrix L3"
+      },
+      "2": {
+        "choice": "B",
+        "raw_response": "Choice: Xelion N5"
+      },
+      "3": {
+        "choice": "B",
+        "raw_response": "Choice: Zenrix P7"
+      },
+      "4": {
+        "choice": "B",
+        "raw_response": "Choice: Bryntex R9"
+      },
+      "5": {
+        "choice": "A",
+        "raw_response": "Choice: Corvex S1"
+      }
+    },
+    "priority_order_raw": "Here's how I'd rank those attributes, from most to least important for my work:\n\n1.  has_manual_controls\n2.  raw_format_support\n3.  weight_grams\n4.  ease_of_use_score\n5.  image_quality_score\n6.  price_usd\n7.  weather_sealed\n8.  burst_speed_fps\n9.  battery_life_hours\n10. optical_zoom_x\n11. video_resolution_4k"
+  }
+]
