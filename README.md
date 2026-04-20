@@ -25,16 +25,16 @@ The notebook `Gemini_API_cs568.ipynb` is designed to run on **Google Colab** wit
 5. Run **cell 5** — load personas and attributes
 6. **Edit cell 7** before running it:
    - Set `RUNNER_ID` to **your assigned number** (1–5)
-   - Set `N_ITERATIONS = 30` for the full run
+   - `N_ITERATIONS` is already set to `10` — leave it as is
    - Leave `NUM_RUNNERS = 5`
 7. Run **cells 8–11** — this starts the experiment
 
 ### What to expect
 
 - Each session = 16 API calls (1 ranking + 15 camera pairs)
-- Runners 1–4 have 3 personas x 30 iterations = **90 sessions** each
-- Runner 5 has 2 personas x 30 iterations = **60 sessions**
-- Estimated time: **1–2 hours** per runner with paid API
+- Runners 1–4 have 3 personas x 10 iterations = **30 sessions** each
+- Runner 5 has 2 personas x 10 iterations = **20 sessions**
+- Estimated time: **20–40 minutes** per runner with paid API
 
 ### Resume support
 
