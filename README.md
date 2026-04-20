@@ -40,10 +40,14 @@ The notebook `Gemini_API_cs568.ipynb` is designed to run on **Google Colab** wit
 
 If Colab disconnects mid-run, just **re-run cells 5 through 11**. The notebook detects the existing output file and skips completed sessions automatically. You won't lose progress or waste API credits.
 
+### Auto-push to GitHub
+
+After the run completes, run **cell 12** — it automatically commits and pushes your runner's JSON file to GitHub. Each runner's file has a unique name so there are no conflicts.
+
 ### After all runners finish
 
-1. Collect all 5 output files (`llm_persona_outputs_runner1.json` through `runner5.json`) into the `results/` folder
-2. One person runs **cell 13** (the merge helper) to combine them into `llm_persona_outputs_merged.json`
+1. Pull the repo — all 5 runner files will already be in `results/`
+2. One person runs **cell 14** (the merge helper) to combine them into `llm_persona_outputs_merged.json`
 3. Run `scoring.ipynb` on the merged file for analysis
 
 ### Output format
