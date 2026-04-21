@@ -1,0 +1,16 @@
+is_expert,price,image_quality,battery_life,optical_zoom_capability,weight,ease_of_use,manual_controls_availability,raw_image_format_support,burst_shooting_speed,weather_sealing,4K_video_recording,simple_pair1,simple_pair2,simple_pair3,simple_pair4,simple_pair5,moderate_pair1,moderate_pair2,moderate_pair3,moderate_pair4,moderate_pair5,complex_pair1,complex_pair2,complex_pair3,complex_pair4,complex_pair5
+Yes,2,1,6,8,9,4,3,5,10,11,7,Brikon S2,Dunox P4,Evoq R5,Grivax N7,Invar D2,Kolvex A1,Noxar D4,Optek E5,Quasar G7,Sovex I9,Ulvex K2,Xelion N5,Zenrix P7,Aelox Q8,Corvex S1
+Yes,8,11,9,7,10,1,6,5,2,4,3,Brikon S2,Dunox P4,Evoq R5,Grivax N7,Invar D2,Lumion B2,Noxar D4,Pryvex F6,Quasar G7,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Corvex S1
+Yes,10,3,7,5,8,6,1,2,4,9,11,Brikon S2,Dunox P4,Evoq R5,Helion Q8,Joltex C3,Lumion B2,Noxar D4,Pryvex F6,Quasar G7,Trevon J1,Vantrix L3,Xelion N5,Zenrix P7,Bryntex R9,Drylon T2
+Yes,5,4,7,3,6,8,1,2,9,10,11,Brikon S2,Claro M3,Evoq R5,Helion Q8,Invar D2,Kolvex A1,Noxar D4,Optek E5,Ralvon H8,Sovex I9,Ulvex K2,Wovex M4,Yvax O6,Bryntex R9,Drylon T2
+Yes,1,4,3,5,6,2,7,8,10,11,9,Alvex T1,Claro M3,Evoq R5,Grivax N7,Invar D2,Kolvex A1,Mavrix C3,Optek E5,Quasar G7,Sovex I9,Ulvex K2,Wovex M4,Yvax O6,Aelox Q8,Corvex S1
+Yes,9,1,5,4,7,6,2,3,8,11,10,Brikon S2,Dunox P4,Fluma K6,Grivax N7,Invar D2,Lumion B2,Noxar D4,Pryvex F6,Quasar G7,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Drylon T2
+Yes,6,11,1,9,3,2,8,10,5,4,7,Brikon S2,Claro M3,Evoq R5,Helion Q8,Invar D2,Lumion B2,Noxar D4,Optek E5,Ralvon H8,Trevon J1,Vantrix L3,Xelion N5,Zenrix P7,Bryntex R9,Drylon T2
+No,4,1,3,2,10,5,6,7,9,8,11,Brikon S2,Claro M3,Evoq R5,Grivax N7,Invar D2,Lumion B2,Noxar D4,Optek E5,Quasar G7,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Corvex S1
+No,11,2,8,4,9,10,3,1,7,5,6,Brikon S2,Dunox P4,Fluma K6,Helion Q8,Joltex C3,Lumion B2,Noxar D4,Pryvex F6,Ralvon H8,Trevon J1,Vantrix L3,Xelion N5,Zenrix P7,Bryntex R9,Drylon T2
+No,4,3,5,9,6,11,2,1,10,8,7,Brikon S2,Dunox P4,Evoq R5,Grivax N7,Joltex C3,Lumion B2,Noxar D4,Optek E5,Quasar G7,Trevon J1,Vantrix L3,Xelion N5,Zenrix P7,Bryntex R9,Drylon T2
+No,2,1,3,4,8,5,10,6,9,11,7,Brikon S2,Claro M3,Evoq R5,Grivax N7,Invar D2,Lumion B2,Noxar D4,Optek E5,Quasar G7,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Corvex S1
+No,3,4,5,6,7,8,9,10,11,2,1,Brikon S2,Claro M3,Evoq R5,Grivax N7,Invar D2,Lumion B2,Noxar D4,Optek E5,Quasar G7,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Corvex S1
+No,6,1,7,5,9,8,10,11,4,3,2,Alvex T1,Claro M3,Evoq R5,Grivax N7,Joltex C3,Kolvex A1,Noxar D4,Pryvex F6,Ralvon H8,Trevon J1,Vantrix L3,Wovex M4,Yvax O6,Bryntex R9,Drylon T2
+No,1,2,3,6,7,4,8,5,9,10,11,Brikon S2,Claro M3,Fluma K6,Helion Q8,Invar D2,Lumion B2,Mavrix C3,Pryvex F6,Quasar G7,Trevon J1,Vantrix L3,Xelion N5,Zenrix P7,Aelox Q8,Corvex S1
+No,1,2,3,4,5,6,7,8,9,10,11,Alvex T1,Claro M3,Evoq R5,Grivax N7,Invar D2,Lumion B2,Mavrix C3,Optek E5,Quasar G7,Sovex I9,Ulvex K2,Xelion N5,Yvax O6,Aelox Q8,Corvex S1
