@@ -109,15 +109,59 @@ per session (persona, gen): pivot to get score at each complexity level
 
 ---
 
+## Metric 3 — Human–LLM Persona Gap Similarity (`persona-gap-similarity.json`)
+
+Measures how closely LLM persona VCA scores match human participant VCA scores across all label × complexity conditions.
+
+**Inputs:** `results/llm/value-choice-alignment.json` and `results/human/value-choice-alignment.json` (the Step 2 summaries for each population).
+
+**Computed quantities:**
+
+- `per_condition` — for each (label, complexity): LLM score, human score, signed gap (LLM − Human), absolute gap
+- `label_summary` — LLM vs human scores averaged across the 3 complexity levels, per label
+- `expert_novice_gap_comparison` — for each complexity: the expert−novice gap within each population (`en_gap = expert_score − novice_score`) and the difference between them (`gap_difference = llm_en_gap − human_en_gap`)
+- `summary` — `mean_absolute_gap`, `mean_signed_gap`, `similarity_score` (= 1 − mean_absolute_gap), `pearson_correlation` across all 6 conditions
+
+---
+
+### Findings
+
+**Surface similarity is misleading.**
+`mean_absolute_gap = 0.047` and `similarity_score = 0.953` suggest LLM and human scores are numerically close. But `pearson_correlation = 0.066` (near zero) means they do not follow the same pattern across conditions — they happen to land in the same range without tracking the same trends.
+
+**LLM experts show an inverted complexity trend vs humans.**
+Human experts score highest at simple (0.590) and lowest at complex (0.518) — consistent degradation with complexity. LLM experts do the opposite: lowest at simple (0.506), highest at complex (0.605). This is the sharpest divergence in the dataset.
+
+**LLM novices track humans more closely than LLM experts do.**
+Novice gaps at moderate (+0.006) and complex (+0.009) are negligible. LLM novice personas are a reasonable proxy for human novices; LLM expert personas are not.
+
+**The expert–novice gap goes in opposite directions at complex.**
+At complex: LLM experts outscore novices (+0.046 gap), while human experts score *below* novices (−0.031 gap). The direction is reversed — the LLM expert persona does not replicate expert human behavior.
+
+**Largest single mismatch: expert/simple (gap = −0.085).**
+LLM experts score 8.5 pp below human experts at simple complexity. At the same level, human experts and novices are tied (0.590 each), while LLM novices massively outscore LLM experts.
+
+**Overall conclusion for RQ1.**
+LLM personas do not replicate the human expertise effect. The expert–novice gap in LLMs is not directionally consistent with the human gap, and the effect of complexity on alignment runs opposite to human behavior — particularly for expert personas.
+
+---
+
 ## File Structure
 
 ```
 metrics/
-├── llm-scoring.py              ← single script, runs all 3 steps in order
-├── MetricMath.md               ← this file
+├── llm-scoring.py              ← Steps 1–3 for LLM sessions
+├── human-scoring.py            ← Steps 1–3 for human participants (same logic)
+├── gap-similarity.py           ← Metric 3: Human–LLM gap
+├── METRICS.md                  ← this file
 └── results/
-    └── llm/
-        ├── pairwise-scores.json          ← Step 1: 2100 rows, one per pair trial
-        ├── value-choice-alignment.json   ← Step 2: aggregated alignment scores
-        └── consistency-degradation.json  ← Step 3: pairwise complexity slopes
+    ├── llm/
+    │   ├── pairwise-scores.json          ← Step 1: 2100 rows, one per pair trial
+    │   ├── value-choice-alignment.json   ← Step 2: aggregated alignment scores
+    │   └── consistency-degradation.json  ← Step 3: pairwise complexity slopes
+    ├── human/
+    │   ├── pairwise-scores.json
+    │   ├── value-choice-alignment.json
+    │   └── consistency-degradation.json
+    └── persona-gap-similarity.json       ← Metric 3: Human–LLM gap similarity
 ```
