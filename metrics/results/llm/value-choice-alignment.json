@@ -1,0 +1,336 @@
+{
+  "summary": [
+    {
+      "persona_label": "expert",
+      "complexity": "complex",
+      "n_personas": 7,
+      "score": 0.6045887445887446
+    },
+    {
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "n_personas": 7,
+      "score": 0.5579591836734694
+    },
+    {
+      "persona_label": "expert",
+      "complexity": "simple",
+      "n_personas": 7,
+      "score": 0.5057142857142857
+    },
+    {
+      "persona_label": "novice",
+      "complexity": "complex",
+      "n_personas": 7,
+      "score": 0.5583549783549784
+    },
+    {
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "n_personas": 7,
+      "score": 0.5408163265306123
+    },
+    {
+      "persona_label": "novice",
+      "complexity": "simple",
+      "n_personas": 7,
+      "score": 0.6571428571428571
+    }
+  ],
+  "individual_records": [
+    {
+      "persona_id": "EXP_01",
+      "persona_name": "Marcus Chen",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 3.0196969696969695
+    },
+    {
+      "persona_id": "EXP_01",
+      "persona_name": "Marcus Chen",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.819047619047619
+    },
+    {
+      "persona_id": "EXP_01",
+      "persona_name": "Marcus Chen",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.3833333333333333
+    },
+    {
+      "persona_id": "EXP_02",
+      "persona_name": "Priya Nair",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 3.0984848484848486
+    },
+    {
+      "persona_id": "EXP_02",
+      "persona_name": "Priya Nair",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.7857142857142856
+    },
+    {
+      "persona_id": "EXP_02",
+      "persona_name": "Priya Nair",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.8333333333333335
+    },
+    {
+      "persona_id": "EXP_03",
+      "persona_name": "Jordan Blake",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 2.963636363636364
+    },
+    {
+      "persona_id": "EXP_03",
+      "persona_name": "Jordan Blake",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.7476190476190476
+    },
+    {
+      "persona_id": "EXP_03",
+      "persona_name": "Jordan Blake",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.5166666666666666
+    },
+    {
+      "persona_id": "EXP_04",
+      "persona_name": "Sofia Rosenberg",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 2.8227272727272728
+    },
+    {
+      "persona_id": "EXP_04",
+      "persona_name": "Sofia Rosenberg",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.7904761904761903
+    },
+    {
+      "persona_id": "EXP_04",
+      "persona_name": "Sofia Rosenberg",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.533333333333333
+    },
+    {
+      "persona_id": "EXP_05",
+      "persona_name": "Riku Tanaka",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 3.271212121212121
+    },
+    {
+      "persona_id": "EXP_05",
+      "persona_name": "Riku Tanaka",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.819047619047619
+    },
+    {
+      "persona_id": "EXP_05",
+      "persona_name": "Riku Tanaka",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.4166666666666665
+    },
+    {
+      "persona_id": "EXP_06",
+      "persona_name": "Amara Osei",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 2.9181818181818184
+    },
+    {
+      "persona_id": "EXP_06",
+      "persona_name": "Amara Osei",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.914285714285714
+    },
+    {
+      "persona_id": "EXP_06",
+      "persona_name": "Amara Osei",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.3833333333333333
+    },
+    {
+      "persona_id": "EXP_07",
+      "persona_name": "Leo Vasquez",
+      "persona_label": "expert",
+      "complexity": "complex",
+      "persona_score": 3.066666666666667
+    },
+    {
+      "persona_id": "EXP_07",
+      "persona_name": "Leo Vasquez",
+      "persona_label": "expert",
+      "complexity": "moderate",
+      "persona_score": 2.6523809523809527
+    },
+    {
+      "persona_id": "EXP_07",
+      "persona_name": "Leo Vasquez",
+      "persona_label": "expert",
+      "complexity": "simple",
+      "persona_score": 2.6333333333333333
+    },
+    {
+      "persona_id": "NOV_01",
+      "persona_name": "Aisha Williams",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.7742424242424244
+    },
+    {
+      "persona_id": "NOV_01",
+      "persona_name": "Aisha Williams",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.604761904761905
+    },
+    {
+      "persona_id": "NOV_01",
+      "persona_name": "Aisha Williams",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.3
+    },
+    {
+      "persona_id": "NOV_02",
+      "persona_name": "Derek Hoffman",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.963636363636364
+    },
+    {
+      "persona_id": "NOV_02",
+      "persona_name": "Derek Hoffman",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.8
+    },
+    {
+      "persona_id": "NOV_02",
+      "persona_name": "Derek Hoffman",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.9
+    },
+    {
+      "persona_id": "NOV_03",
+      "persona_name": "Mei Lin",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.8045454545454547
+    },
+    {
+      "persona_id": "NOV_03",
+      "persona_name": "Mei Lin",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.7285714285714286
+    },
+    {
+      "persona_id": "NOV_03",
+      "persona_name": "Mei Lin",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.0
+    },
+    {
+      "persona_id": "NOV_04",
+      "persona_name": "Tobias Grant",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.746969696969697
+    },
+    {
+      "persona_id": "NOV_04",
+      "persona_name": "Tobias Grant",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.552380952380952
+    },
+    {
+      "persona_id": "NOV_04",
+      "persona_name": "Tobias Grant",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.3
+    },
+    {
+      "persona_id": "NOV_05",
+      "persona_name": "Zara Ahmed",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.8515151515151516
+    },
+    {
+      "persona_id": "NOV_05",
+      "persona_name": "Zara Ahmed",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.8714285714285714
+    },
+    {
+      "persona_id": "NOV_05",
+      "persona_name": "Zara Ahmed",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.183333333333333
+    },
+    {
+      "persona_id": "NOV_06",
+      "persona_name": "Carlos Mendez",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.618181818181818
+    },
+    {
+      "persona_id": "NOV_06",
+      "persona_name": "Carlos Mendez",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.661904761904762
+    },
+    {
+      "persona_id": "NOV_06",
+      "persona_name": "Carlos Mendez",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.05
+    },
+    {
+      "persona_id": "NOV_07",
+      "persona_name": "Hannah Berg",
+      "persona_label": "novice",
+      "complexity": "complex",
+      "persona_score": 2.7833333333333337
+    },
+    {
+      "persona_id": "NOV_07",
+      "persona_name": "Hannah Berg",
+      "persona_label": "novice",
+      "complexity": "moderate",
+      "persona_score": 2.7095238095238097
+    },
+    {
+      "persona_id": "NOV_07",
+      "persona_name": "Hannah Berg",
+      "persona_label": "novice",
+      "complexity": "simple",
+      "persona_score": 3.2666666666666666
+    }
+  ]
+}

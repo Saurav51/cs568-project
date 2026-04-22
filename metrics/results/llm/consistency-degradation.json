@@ -1,0 +1,116 @@
+{
+  "summary": [
+    {
+      "persona_label": "expert",
+      "simple_to_moderate": 0.05224489795918368,
+      "moderate_to_complex": 0.04662956091527521,
+      "n_personas": 7
+    },
+    {
+      "persona_label": "novice",
+      "simple_to_moderate": -0.11632653061224488,
+      "moderate_to_complex": 0.01753865182436611,
+      "n_personas": 7
+    }
+  ],
+  "individual_records": [
+    {
+      "persona_id": "EXP_01",
+      "persona_name": "Marcus Chen",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.08714285714285717,
+      "moderate_to_complex": 0.04012987012987011
+    },
+    {
+      "persona_id": "EXP_02",
+      "persona_name": "Priya Nair",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.009523809523809528,
+      "moderate_to_complex": 0.06255411255411256
+    },
+    {
+      "persona_id": "EXP_03",
+      "persona_name": "Jordan Blake",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.04619047619047621,
+      "moderate_to_complex": 0.04320346320346319
+    },
+    {
+      "persona_id": "EXP_04",
+      "persona_name": "Sofia Rosenberg",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.051428571428571455,
+      "moderate_to_complex": 0.00645021645021644
+    },
+    {
+      "persona_id": "EXP_05",
+      "persona_name": "Riku Tanaka",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.0804761904761905,
+      "moderate_to_complex": 0.09043290043290046
+    },
+    {
+      "persona_id": "EXP_06",
+      "persona_name": "Amara Osei",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.10619047619047614,
+      "moderate_to_complex": 0.0007792207792208683
+    },
+    {
+      "persona_id": "EXP_07",
+      "persona_name": "Leo Vasquez",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.003809523809523846,
+      "moderate_to_complex": 0.08285714285714282
+    },
+    {
+      "persona_id": "NOV_01",
+      "persona_name": "Aisha Williams",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.139047619047619,
+      "moderate_to_complex": 0.03389610389610387
+    },
+    {
+      "persona_id": "NOV_02",
+      "persona_name": "Derek Hoffman",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.22000000000000003,
+      "moderate_to_complex": 0.0327272727272727
+    },
+    {
+      "persona_id": "NOV_03",
+      "persona_name": "Mei Lin",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.05428571428571427,
+      "moderate_to_complex": 0.015194805194805228
+    },
+    {
+      "persona_id": "NOV_04",
+      "persona_name": "Tobias Grant",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.14952380952380948,
+      "moderate_to_complex": 0.03891774891774889
+    },
+    {
+      "persona_id": "NOV_05",
+      "persona_name": "Zara Ahmed",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.062380952380952426,
+      "moderate_to_complex": -0.003982683982683921
+    },
+    {
+      "persona_id": "NOV_06",
+      "persona_name": "Carlos Mendez",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.07761904761904757,
+      "moderate_to_complex": -0.008744588744588767
+    },
+    {
+      "persona_id": "NOV_07",
+      "persona_name": "Hannah Berg",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.11142857142857135,
+      "moderate_to_complex": 0.014761904761904743
+    }
+  ]
+}
