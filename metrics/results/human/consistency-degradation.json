@@ -1,0 +1,116 @@
+{
+  "summary": [
+    {
+      "persona_label": "expert",
+      "simple_to_moderate": -0.06394557823129256,
+      "moderate_to_complex": -0.008348794063079765,
+      "n_personas": 7
+    },
+    {
+      "persona_label": "novice",
+      "simple_to_moderate": -0.05578231292517005,
+      "moderate_to_complex": 0.014656771799628956,
+      "n_personas": 7
+    }
+  ],
+  "individual_records": [
+    {
+      "persona_id": "EXP_01",
+      "persona_name": "EXP_01",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.08095238095238089,
+      "moderate_to_complex": -0.09480519480519478
+    },
+    {
+      "persona_id": "EXP_02",
+      "persona_name": "EXP_02",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.08571428571428569,
+      "moderate_to_complex": -0.02034632034632039
+    },
+    {
+      "persona_id": "EXP_03",
+      "persona_name": "EXP_03",
+      "persona_label": "expert",
+      "simple_to_moderate": 0.11428571428571421,
+      "moderate_to_complex": -0.011255411255411185
+    },
+    {
+      "persona_id": "EXP_04",
+      "persona_name": "EXP_04",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.14761904761904776,
+      "moderate_to_complex": 0.032467532467532534
+    },
+    {
+      "persona_id": "EXP_05",
+      "persona_name": "EXP_05",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.13809523809523816,
+      "moderate_to_complex": -0.016450216450216493
+    },
+    {
+      "persona_id": "EXP_06",
+      "persona_name": "EXP_06",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.004761904761904745,
+      "moderate_to_complex": -0.013419913419913443
+    },
+    {
+      "persona_id": "EXP_07",
+      "persona_name": "EXP_07",
+      "persona_label": "expert",
+      "simple_to_moderate": -0.10476190476190489,
+      "moderate_to_complex": 0.06536796536796541
+    },
+    {
+      "persona_id": "NOV_08",
+      "persona_name": "NOV_08",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.08095238095238089,
+      "moderate_to_complex": -0.03116883116883118
+    },
+    {
+      "persona_id": "NOV_09",
+      "persona_name": "NOV_09",
+      "persona_label": "novice",
+      "simple_to_moderate": 0.11428571428571427,
+      "moderate_to_complex": 0.08571428571428585
+    },
+    {
+      "persona_id": "NOV_10",
+      "persona_name": "NOV_10",
+      "persona_label": "novice",
+      "simple_to_moderate": 0.08095238095238089,
+      "moderate_to_complex": 0.04632034632034632
+    },
+    {
+      "persona_id": "NOV_11",
+      "persona_name": "NOV_11",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.14761904761904754,
+      "moderate_to_complex": -0.012987012987012991
+    },
+    {
+      "persona_id": "NOV_12",
+      "persona_name": "NOV_12",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.09523809523809523,
+      "moderate_to_complex": 0.013419913419913443
+    },
+    {
+      "persona_id": "NOV_13",
+      "persona_name": "NOV_13",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.2142857142857143,
+      "moderate_to_complex": 0.029437229437229484
+    },
+    {
+      "persona_id": "NOV_14",
+      "persona_name": "NOV_14",
+      "persona_label": "novice",
+      "simple_to_moderate": -0.04761904761904756,
+      "moderate_to_complex": -0.02813852813852824
+    }
+  ]
+}
