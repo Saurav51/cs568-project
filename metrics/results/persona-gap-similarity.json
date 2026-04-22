@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "mean_absolute_gap": 0.047399,
+    "mean_signed_gap": 0.019144,
+    "similarity_score": 0.952601,
+    "pearson_correlation": 0.065713
+  },
+  "label_summary": [
+    {
+      "label": "expert",
+      "llm_mean": 0.556087,
+      "human_mean": 0.545063,
+      "signed_gap": 0.011025,
+      "absolute_gap": 0.011025
+    },
+    {
+      "label": "novice",
+      "llm_mean": 0.585438,
+      "human_mean": 0.558174,
+      "signed_gap": 0.027264,
+      "absolute_gap": 0.027264
+    }
+  ],
+  "per_condition": [
+    {
+      "label": "expert",
+      "complexity": "simple",
+      "llm_score": 0.505714,
+      "human_score": 0.590476,
+      "signed_gap": -0.084762,
+      "absolute_gap": 0.084762
+    },
+    {
+      "label": "expert",
+      "complexity": "moderate",
+      "llm_score": 0.557959,
+      "human_score": 0.526531,
+      "signed_gap": 0.031429,
+      "absolute_gap": 0.031429
+    },
+    {
+      "label": "expert",
+      "complexity": "complex",
+      "llm_score": 0.604589,
+      "human_score": 0.518182,
+      "signed_gap": 0.086407,
+      "absolute_gap": 0.086407
+    },
+    {
+      "label": "novice",
+      "complexity": "simple",
+      "llm_score": 0.657143,
+      "human_score": 0.590476,
+      "signed_gap": 0.066667,
+      "absolute_gap": 0.066667
+    },
+    {
+      "label": "novice",
+      "complexity": "moderate",
+      "llm_score": 0.540816,
+      "human_score": 0.534694,
+      "signed_gap": 0.006122,
+      "absolute_gap": 0.006122
+    },
+    {
+      "label": "novice",
+      "complexity": "complex",
+      "llm_score": 0.558355,
+      "human_score": 0.549351,
+      "signed_gap": 0.009004,
+      "absolute_gap": 0.009004
+    }
+  ],
+  "expert_novice_gap_comparison": [
+    {
+      "complexity": "simple",
+      "llm_expert_score": 0.505714,
+      "llm_novice_score": 0.657143,
+      "llm_en_gap": -0.151429,
+      "human_expert_score": 0.590476,
+      "human_novice_score": 0.590476,
+      "human_en_gap": 0.0,
+      "gap_difference": -0.151429
+    },
+    {
+      "complexity": "moderate",
+      "llm_expert_score": 0.557959,
+      "llm_novice_score": 0.540816,
+      "llm_en_gap": 0.017143,
+      "human_expert_score": 0.526531,
+      "human_novice_score": 0.534694,
+      "human_en_gap": -0.008163,
+      "gap_difference": 0.025306
+    },
+    {
+      "complexity": "complex",
+      "llm_expert_score": 0.604589,
+      "llm_novice_score": 0.558355,
+      "llm_en_gap": 0.046234,
+      "human_expert_score": 0.518182,
+      "human_novice_score": 0.549351,
+      "human_en_gap": -0.031169,
+      "gap_difference": 0.077403
+    }
+  ]
+}
