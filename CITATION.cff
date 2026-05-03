@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Hariani
+    given-names: Ritik
+    affiliation: "University of Illinois Urbana-Champaign"
+  - family-names: Muthigi
+    given-names: Anil
+    affiliation: "University of Illinois Urbana-Champaign"
+  - family-names: Nayak
+    given-names: Saurav
+    affiliation: "University of Illinois Urbana-Champaign"
+  - family-names: Rawat
+    given-names: Jyoti
+    affiliation: "University of Illinois Urbana-Champaign"
+  - family-names: Tyagi
+    given-names: Rashi
+    affiliation: "University of Illinois Urbana-Champaign"
+title: "LLM-Based User Simulation for HCI Decision-Making"
+abstract: " "
+version: 1.0.0
+keywords:
+  - human-computer interaction
+  - LLM agents
+  - user simulation
+  - decision-making
+  - synthetic users
+  - preference-choice consistency
+  - CHI Late-Breaking Work
+date-released: 2026-05-02
+url: "https://github.com/Saurav51/cs568-project"
