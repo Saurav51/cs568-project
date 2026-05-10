@@ -199,13 +199,30 @@ This section describes the participant groups, the camera-purchasing task used a
 \subsubsection{LLM Personas}
 We created 14 personas (7 experts, 7 novices) and ran them on Gemini 2.5 Flash-Lite. The expert group covered a range of professional photography contexts: wedding and portrait work, wildlife, street and documentary, commercial product, landscape and astrophotography, fashion editorial, and sports. The novice group was equally varied: a college student, a parent who photographs family events, a food blogger, a retired teacher just getting into photography, a travel enthusiast, a college athlete making fitness content, and an event planner.
 
-Rather than just labeling a persona ``expert'' or ``novice'' and telling it what to care about, we wrote each persona a detailed backstory covering gear they own, how long they have been shooting, what they know and don't know, and what they are trying to buy and why (Figure~\ref{fig:persona-prompts}). The idea was that their priorities should come through naturally from the context, not because they were told to prioritize certain things. We chose 14 named personas rather than two archetypes (one expert, one novice) because real users vary within a group: a sports photographer and a wedding photographer are both experts but trade off attributes very differently, and the same is true of a college student and a retired beginner on the novice side. A population design captures that within-group diversity, where a single-archetype design would compress it. The prompts were fixed and never changed between runs. We ran each persona 10 times to capture behavioral variance across generations rather than rely on a single response, giving us 140 sessions in total. All sessions were run using the Gemini 2.5 Flash-Lite API with temperature 0.75, top-p 0.95, and a maximum of 1024 output tokens per turn. Temperature was kept above zero intentionally so that responses varied meaningfully across runs.
+Rather than just labeling a persona ``expert'' or ``novice'' and telling it what to care about, we wrote each persona a detailed backstory covering gear they own, how long they have been shooting, what they know and don't know, and what they are trying to buy and why (Table~\ref{tab:persona-prompts}). The idea was that their priorities should come through naturally from the context, not because they were told to prioritize certain things. We chose 14 named personas rather than two archetypes (one expert, one novice) because real users vary within a group: a sports photographer and a wedding photographer are both experts but trade off attributes very differently, and the same is true of a college student and a retired beginner on the novice side. A population design captures that within-group diversity, where a single-archetype design would compress it. The prompts were fixed and never changed between runs. We ran each persona 10 times to capture behavioral variance across generations rather than rely on a single response, giving us 140 sessions in total. All sessions were run using the Gemini 2.5 Flash-Lite API with temperature 0.75, top-p 0.95, and a maximum of 1024 output tokens per turn. Temperature was kept above zero intentionally so that responses varied meaningfully across runs.
 
-\begin{figure*}[h]
+\begin{table*}[h]
   \centering
-  \includegraphics[width=\textwidth]{persona-prompts-example.png}
-  \caption{Two example persona system prompts: an expert (Marcus Chen, professional wedding photographer) and a novice (Aisha Williams, college student using a phone camera). Backstories specify gear, experience, and purchase context; they never instruct the persona on which attributes to prioritize.}~\label{fig:persona-prompts}
-\end{figure*}
+  \footnotesize
+  \begin{tabular}{p{0.46\textwidth} p{0.46\textwidth}}
+    \toprule
+    \textbf{Expert (EXP\_01) --- Marcus Chen} & \textbf{Novice (NOV\_01) --- Aisha Williams} \\
+    \midrule
+    You are Marcus Chen, a 38-year-old professional wedding and portrait photographer based in Chicago. You have been shooting professionally for 12 years and run your own photography business, handling weddings on weekends, engagement sessions during the week, and occasional editorial or studio portrait work.
+    &
+    You are Aisha Williams, a 21-year-old college student who takes all her photos on her iPhone 15 Pro. You have never owned a dedicated camera, and your photography knowledge comes from social media, TikTok tutorials, and trial and error on your phone. \\
+    \addlinespace
+    You own 6 cameras, including a Sony A7R V, a Canon R5, and several Fujifilm bodies. Over the last two years you have spent more than \$40{,}000 on cameras, lenses, lighting equipment, and accessories. You shoot RAW exclusively and edit your images in Lightroom and Capture One.
+    &
+    You edit photos in apps like VSCO and Lightroom Mobile and post to Instagram. You are familiar with features like portrait mode, night mode, and filters from using your phone camera regularly, and you take photos mostly in casual day-to-day situations --- around campus, with friends, and on trips. \\
+    \addlinespace
+    You understand aperture, ISO, shutter speed, dynamic range, color science, lens rendering, autofocus tracking, and post-processing workflows. You have shot in dim reception halls, bright outdoor ceremonies, churches lit only by candles, and controlled studio environments.
+    &
+    You have heard terms like aperture, ISO, and shutter speed but you don't really know what they mean. Photography interests you as a hobby, and you have recently started wondering whether a dedicated camera would let you take photos you can't easily capture with your phone. \\
+    \bottomrule
+  \end{tabular}
+  \caption{Two example persona system prompts shown side by side: one expert and one novice. Backstories specify gear, experience, and purchase context, but never instruct the persona on which attributes to prioritize. The remaining 12 prompts (6 expert, 6 novice) follow the same structure across other photography contexts.}~\label{tab:persona-prompts}
+\end{table*}
 
 \subsubsection{Human Participants}
 We recruited 14 participants (7 experts, 7 novices) over a four-week period through two channels: outreach to two campus photography clubs and personal contacts who fit the screening profile. Recruitment was conducted by the authors directly; participation was voluntary and unpaid. Of 21 individuals approached, 14 met the screening criteria and completed the study; the remaining seven were screened out for not meeting the expert or novice definitions used in this work.
@@ -237,13 +254,21 @@ Complexity was defined by how many attributes were visible for a given pair (Tab
   \caption{Number of visible attributes per complexity level.}~\label{tab:complexity}
 \end{table}
 
-There were 5 pairs at each complexity level, so 15 pairs per session total. Pairs within the same complexity level did not all show the same attributes. One simple pair might show price, image quality, and battery life, while another showed weight, ease of use, and manual controls. This ensured no single trade-off dominated the design and that participants had to think carefully about different combinations of features at every level. Figure~\ref{fig:camera-pair} shows an example simple pair as it was presented.
+There were 5 pairs at each complexity level, so 15 pairs per session total. Pairs within the same complexity level did not all show the same attributes. One simple pair might show price, image quality, and battery life, while another showed weight, ease of use, and manual controls. This ensured no single trade-off dominated the design and that participants had to think carefully about different combinations of features at every level. Table~\ref{tab:camera-pair} shows an example simple pair as it was presented.
 
-\begin{figure}[h]
+\begin{table}[h]
   \centering
-  \includegraphics[width=\columnwidth]{camera-pair-example.png}
-  \caption{Example simple-condition camera pair (3 visible attributes). Both cameras have a clear strength: Alvex T1 wins on price and battery life, Brikon S2 wins on image quality. There is no dominant option; the participant's choice depends on which attribute they ranked highest in the priority elicitation step.}~\label{fig:camera-pair}
-\end{figure}
+  \begin{tabular}{l r r}
+    \toprule
+    \textbf{Attribute} & \textbf{Alvex T1} & \textbf{Brikon S2} \\
+    \midrule
+    Price          & \$289   & \$499   \\
+    Image quality  & 6/10    & 9/10    \\
+    Battery life   & 18 hrs  & 11 hrs  \\
+    \bottomrule
+  \end{tabular}
+  \caption{Example simple-condition camera pair (3 visible attributes). Each camera has a clear strength: Alvex T1 wins on price and battery, Brikon S2 wins on image quality. There is no dominant option; the participant's choice depends on which attribute they ranked highest in the priority-elicitation step.}~\label{tab:camera-pair}
+\end{table}
 
 \subsection{Session Structure}
 Each session covered all 15 pairs in one go. For LLM personas, this was a single multi-turn conversation. For human participants, the same structure was followed through the Google Form.
