@@ -17,7 +17,7 @@ authors:
     given-names: Rashi
     affiliation: "University of Illinois Urbana-Champaign"
 title: "LLM-Based User Simulation for HCI Decision-Making"
-abstract: " "
+abstract: "A controlled comparison of value-choice coherence between persona-conditioned LLMs (Gemini 2.5 Flash-Lite, 7 expert and 7 novice photographer personas, 10 runs each) and 14 screened human participants on a multi-attribute camera-purchasing task at three complexity levels. Aggregate similarity is high (0.953) but the cross-condition Pearson correlation is near zero (r = 0.066), and the directional patterns diverge: human experts degrade with complexity while LLM experts improve, and the expert-novice gap reverses sign at the highest complexity level. The contrast motivates condition-level, process-oriented evaluation of LLM-based synthetic users in HCI research."
 version: 1.0.0
 keywords:
   - human-computer interaction
