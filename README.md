@@ -4,6 +4,12 @@ A CS568 research project comparing how persona-conditioned LLMs and screened hum
 
 The paper write-up lives in `paper/`. A summary of the experiment, the data, and how to reproduce everything is below.
 
+## Supplementary materials
+
+Companion materials — Jupyter notebooks, the Google Form used for human participants, the project video, the presentation, and other supporting files — are hosted on Google Drive:
+
+[CS568 supplementary materials (Google Drive)](https://drive.google.com/drive/u/2/folders/1Op0fbbPy9tbETpljNO-jqnmbeCCytemM)
+
 ## Headline finding
 
 Aggregate scores look fine — LLM and human populations match at **similarity = 0.953**, mean absolute gap of 0.047. But the cross-condition Pearson correlation is **near zero (r = 0.066)** and the patterns *diverge in direction*:
