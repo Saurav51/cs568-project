@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 METRICS_DIR = Path(__file__).parent
 INPUT_JSON  = METRICS_DIR / "results" / "persona-gap-similarity.json"
-OUTPUT_PNG  = Path(__file__).parent.parent / "vca-by-complexity.png"
+OUTPUT_PNG  = Path(__file__).parent.parent / "paper" / "figures" / "vca-by-complexity.png"
 
 with open(INPUT_JSON) as f:
     data = json.load(f)
