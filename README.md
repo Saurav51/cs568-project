@@ -45,6 +45,7 @@ Full details are in `paper/paper.tex` (§ Methodology and § Evaluation Metrics)
 ├── paper/                            Paper write-up
 │   ├── paper.tex                       Final ~6-page version (submission)
 │   ├── paper-draft.tex                 Longer earlier draft (kept for reference)
+│   ├── sample.bib                      BibTeX entries used by paper.tex
 │   ├── CITATION.cff                    Citation metadata
 │   └── figures/
 │       └── vca-by-complexity.png       Main results plot
