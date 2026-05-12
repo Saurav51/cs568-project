@@ -1,0 +1,443 @@
+%%
+%% This file uses the ACM Master Article Template (acmart).
+%%
+%% For submission and review, use \documentclass[manuscript,review]{acmart}.
+%% For camera ready, switch to \documentclass[sigconf]{acmart}
+%% (or whichever template style is required for your publication).
+%%
+\documentclass[manuscript,review]{acmart}
+
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.
+\setcopyright{rightsretained}
+\copyrightyear{2026}
+\acmYear{2026}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%% Conference information.
+\acmConference[Conference acronym 'XX]{Make sure to enter the correct
+  conference title from your rights confirmation email}{June 03--05,
+  2018}{Woodstock, NY}
+\acmISBN{978-1-4503-XXXX-X/2018/06}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Do LLM Personas Decide Like Real Users? A Study of Value-Choice Coherence Across Expertise Levels}
+
+%%
+%% Authors and affiliations.
+%% All five authors share the same affiliation but each must be defined
+%% separately for accurate metadata identification.
+\author{Ritik Hariani}
+\authornote{All authors contributed equally to this work.}
+\email{ritikh2@illinois.edu}
+\affiliation{%
+  \institution{University of Illinois Urbana-Champaign}
+  \city{Urbana-Champaign}
+  \state{Illinois}
+  \country{USA}
+}
+
+\author{Anil Muthigi}
+\authornotemark[1]
+\email{muthigi2@illinois.edu}
+\affiliation{%
+  \institution{University of Illinois Urbana-Champaign}
+  \city{Urbana-Champaign}
+  \state{Illinois}
+  \country{USA}
+}
+
+\author{Saurav Nayak}
+\authornotemark[1]
+\email{sgnayak2@illinois.edu}
+\affiliation{%
+  \institution{University of Illinois Urbana-Champaign}
+  \city{Urbana-Champaign}
+  \state{Illinois}
+  \country{USA}
+}
+
+\author{Jyoti Rawat}
+\authornotemark[1]
+\email{jrawat2@illinois.edu}
+\affiliation{%
+  \institution{University of Illinois Urbana-Champaign}
+  \city{Urbana-Champaign}
+  \state{Illinois}
+  \country{USA}
+}
+
+\author{Rashi Tyagi}
+\authornotemark[1]
+\email{rtyagi4@illinois.edu}
+\affiliation{%
+  \institution{University of Illinois Urbana-Champaign}
+  \city{Urbana-Champaign}
+  \state{Illinois}
+  \country{USA}
+}
+
+%%
+%% A shorter author list for the page headers.
+\renewcommand{\shortauthors}{Hariani, Muthigi, Nayak, Rawat, and Tyagi}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+Persona-conditioned LLMs are increasingly used as stand-ins for human participants in HCI research, yet little work has tested whether they replicate the decision-making patterns that actually distinguish real users. We ran a controlled comparison of value-choice coherence between 14 LLM personas (Gemini 2.5 Flash-Lite, 7 expert and 7 novice photographers, 10 runs each) and 14 screened human participants on a multi-attribute camera-purchasing task. All participants ranked 11 camera attributes by personal priority, then selected between 15 camera pairs presented at three complexity levels (3, 6, or 11 visible attributes). We measured alignment between stated priorities and actual choices, how that alignment changed with complexity, and how closely LLM and human patterns matched. On aggregate the two populations appear similar (mean similarity score = 0.953), but the cross-condition Pearson correlation is near zero (\textit{r} = 0.066), and the patterns diverge in direction. Human expert alignment degrades as complexity increases; LLM expert alignment improves. The expert-novice gap reverses sign at the highest complexity level. LLM novice personas are a reasonable proxy for human novices; LLM expert personas are not. These findings show that high-level outcome metrics can mask fundamentally different decision processes, and suggest that evaluating LLM-based synthetic users requires condition-level, process-oriented comparisons rather than aggregate alignment scores.\footnote{Code, prompts, and data: \url{https://github.com/Saurav51/cs568-project}}
+\end{abstract}
+
+%%
+%% CCS concepts and user-defined keywords.
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10003120.10003121.10003122.10003334</concept_id>
+<concept_desc>Human-centered computing~User studies</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003120.10003121.10003122.10003333</concept_id>
+<concept_desc>Human-centered computing~Empirical studies in HCI</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+<concept>
+<concept_id>10010147.10010257.10010293</concept_id>
+<concept_desc>Computing methodologies~Natural language processing</concept_desc>
+<concept_significance>100</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~User studies}
+\ccsdesc[300]{Human-centered computing~Empirical studies in HCI}
+\ccsdesc[100]{Computing methodologies~Natural language processing}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{LLM personas, decision-making, value-choice alignment, expertise, human-AI comparison}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+Large Language Models (LLMs) are being used more frequently in Human-Computer Interaction (HCI) research to simulate human behavior, with applications spanning user feedback generation, usability evaluation, and early-stage design testing \cite{hamalainen2023synthetichci, park2023generativeagents}. An increasing amount of work uses persona-conditioned LLMs as proxies for real users. These personas are assigned demographic attributes, domain expertise levels, or behavioral traits through prompting to approximate diverse populations at scale \cite{argyle2023out,aher2023usinglargelanguagemodels}. This approach has been prominent because it promises a cost-effective and rapid alternative to the human participant recruitment process, which is particularly valued in interactive design contexts where fast feedback cycles are valuable.
+
+However, limited study has been done on the behavioral validity of LLM-based user simulation. Most evaluations assess whether synthetic outputs are plausible or useful to designers, rather than whether they reflect the underlying decision processes that characterize real human behavior \cite{hamalainen2023synthetichci, salminen2025syntheticusers}. Recent work has shown that LLMs can produce surface-level human-like responses while failing to capture deeper, context-dependent behavior \cite{santurkar}, and the persona grounding through prompting alone may not faithfully represent the cognitive and behavioral characteristics the persona claims to simulate \cite{aher2023usinglargelanguagemodels, shanahans}. Importantly, an LLM can give answers that look reasonable on the surface, even if the way it arrived at those answers is very different from how a human would. Most current evaluation methods do not capture that difference.
+
+This gap carries a direct consequence in HCI practice. Research in decision science has long established that human choices are shaped by task complexity, information availability, and domain expertise \cite{payne1993adaptive}. Experts tend to apply domain knowledge more consistently across decision contexts, whereas novices rely on surface-level cues or simplified heuristics as task complexity increases \cite{payne1993adaptive}. Value-choice inconsistency, where stated preferences diverge from actual choices, is a well-documented phenomenon in human decision-making, especially under increasing cognitive load \cite{Tversky}. If persona-conditioned LLMs are used to generate synthetic evaluation data, they must not only produce plausible choices but replicate these characteristic patterns of human decision behavior. Whether they do so across varied complexity levels is an open empirical question.
+
+We address this question through a controlled comparison of value-choice coherence between persona-conditioned LLMs and human participants in a multi-attribute camera-purchasing task. We created 14 LLM personas using Gemini 2.5 Flash-Lite, of which 7 were experts and 7 were novices, each with detailed biographical backstories. Furthermore, we recruited 14 human participants screened to match the same expertise levels. All participants ranked 11 camera attributes by personal priority, then selected between camera pairs presented at three levels of complexity: simple (3 attributes), moderate (6 attributes), and complex (11 attributes). This design allows us to evaluate behavioral alignment across specific conditions where human decision patterns are known to shift.
+
+Our study is organized around two research questions, evaluated through three complementary metrics. \textbf{RQ1 (Expertise and Alignment)}: Do expert LLM personas demonstrate higher value-choice alignment than novice personas, and does this difference reflect the alignment gap observed between human experts and novices? \textbf{RQ2 (Complexity and Robustness)}: Does value-choice alignment decrease as product description complexity increases, and do expert personas exhibit greater robustness to this degradation compared to novice personas? To evaluate these questions, we measure three behavioral signals: \textbf{value-choice alignment} (whether choices match stated priorities), \textbf{consistency degradation} (whether alignment drops as decision complexity increases), and the \textbf{human-LLM persona gap} (whether LLM persona decision patterns match those of their human counterparts across expertise levels and complexity conditions).
+
+Rather than evaluating synthetic users on output plausibility alone, we evaluate them through decision-theoretic signals: how they reason across multiple attributes, how expertise changes their choices and whether their stated preferences stay consistent with their final decisions. Our findings reveal that while aggregate metrics suggest closeness between LLM and human alignment scores (similarity = 0.953), the cross-condition Pearson correlation is nearly zero, at $r = 0.066$, suggesting that the LLM scores do not track human scores in a consistent way. We also find that the direction of the complexity effect and the size of the expert-novice gap both differ substantially between the two populations. LLM expert personas improve in alignment as complexity rises, directly inverting the degradation pattern observed in human experts. These results suggest that surface-level proxies such as choice accuracy or preference match should not by themselves be treated as evidence of behavioral validity, and motivate a process-level approach to evaluating LLM-based user simulation in HCI.
+
+\section{Related Work}
+
+\subsection{LLM-based User Simulation in HCI}
+
+Simulation has long been used in HCI to explore user behavior and support early-stage design decisions \cite{murraysmith2022simulation}. With the rise of large language models (LLMs), recent work has extended this paradigm toward generating synthetic user data. H\"am\"al\"ainen et al.\ show that LLMs can produce realistic user-generated content for ideation and piloting, but raise concerns about ecological validity \cite{hamalainen2023synthetichci}. Similarly, Xiang et al.\ introduce SimUser, which simulates diverse users to generate usability feedback at scale \cite{xiang2024simuser}.
+
+A parallel line of work explores LLM-based agents as models of human-like behavior. Park et al.\ demonstrate that generative agents can produce coherent, interactive behaviors over time \cite{park2023generativeagents}. However, these approaches primarily evaluate synthetic users based on plausibility and usefulness of generated outputs rather than whether they reflect underlying human decision processes. Recent work further shows that LLM-simulated users can be unreliable proxies for real users, particularly in behavioral evaluations rather than surface-level tasks \cite{lostinsimulation2024}. Salminen et al.\ further highlight that LLM-based synthetic users may be limited by bias and lack of grounding in real human experience \cite{salminen2025syntheticusers}.
+
+\subsection{Decision Behavior, Expertise, and Preference Consistency}
+
+Research in decision-making shows that human choices are shaped by task complexity, information availability, and expertise. In multi-attribute decision contexts, individuals adapt their strategies as complexity increases, often shifting from systematic trade-offs to simpler heuristics \cite{payne1993adaptive}. In such settings, individuals evaluate trade-offs between competing attributes, often prioritizing some features over others depending on task complexity. Expertise plays a critical role: experts tend to apply domain knowledge more consistently, while novices rely on surface-level cues or simplified strategies \cite{chi1988nature, shanteau1992competence}.
+
+Prior work also shows that alignment between stated preferences and actual choices is not always stable. Preference reversals demonstrate that individuals may express one preference but act differently when making decisions, particularly under varying decision frames or information conditions \cite{slovic1983preference}. These findings suggest that value-choice coherence is sensitive to both cognitive load and expertise.
+
+Recent work in human-AI interaction further shows that decision outcomes are influenced by how users interpret and integrate model outputs \cite{bansal2021does}. At the same time, LLMs can approximate certain human response patterns but often fail to capture deeper, context-dependent decision behavior \cite{argyle2023out}.
+
+\subsection{Our Contribution}
+
+Our work bridges these areas by evaluating whether persona-conditioned LLMs exhibit human-like decision behavior rather than merely producing plausible outputs. We draw on decision-theoretic concepts such as multi-attribute reasoning, expertise effects, and preference-choice consistency to design controlled comparisons between human participants and LLM personas.
+
+Specifically, we compare decision patterns across expert and novice conditions while varying the amount of decision-relevant information. This allows us to test whether LLM personas exhibit the same breakdowns and adaptations in value-choice coherence observed in human decision-making. By grounding synthetic user evaluation in comparative decision behavior, our work provides a more rigorous framework for assessing the validity of LLM-based user simulation in HCI.
+
+\section{Methodology}
+
+\subsection{Overview}
+This section describes the participant groups, the camera-purchasing task used as the experimental domain, how sessions were structured, the three metrics used to evaluate behavior, and the approach taken to analyze the results.
+
+\subsection{Participants}
+
+\subsubsection{LLM Personas}
+We created 14 personas (7 experts, 7 novices) and ran them on Gemini 2.5 Flash-Lite. The expert group covered a range of professional photography contexts: wedding and portrait work, wildlife, street and documentary, commercial product, landscape and astrophotography, fashion editorial, and sports. The novice group was equally varied: a college student, a parent who photographs family events, a food blogger, a retired teacher just getting into photography, a travel enthusiast, a college athlete making fitness content, and an event planner.
+
+Rather than just labeling a persona ``expert'' or ``novice'' and telling it what to care about, we wrote each persona a detailed backstory covering gear they own, how long they have been shooting, what they know and don't know, and what they are trying to buy and why (Table~\ref{tab:persona-prompts}). The idea was that their priorities should come through naturally from the context, not because they were told to prioritize certain things. We chose 14 named personas rather than two archetypes (one expert, one novice) because real users vary within a group: a sports photographer and a wedding photographer are both experts but trade off attributes very differently, and the same is true of a college student and a retired beginner on the novice side. A population design captures that within-group diversity, where a single-archetype design would compress it. The prompts were fixed and never changed between runs. We ran each persona 10 times to capture behavioral variance across generations rather than rely on a single response, giving us 140 sessions in total. All sessions were run using the Gemini 2.5 Flash-Lite API with temperature 0.75, top-p 0.95, and a maximum of 1024 output tokens per turn. Temperature was kept above zero intentionally so that responses varied meaningfully across runs.
+
+\begin{table*}[h]
+  \caption{Two example persona system prompts shown side by side: one expert and one novice. Backstories specify gear, experience, and purchase context, but never instruct the persona on which attributes to prioritize. The remaining 12 prompts (6 expert, 6 novice) follow the same structure across other photography contexts.}
+  \label{tab:persona-prompts}
+  \centering
+  \footnotesize
+  \begin{tabular}{p{0.46\textwidth} p{0.46\textwidth}}
+    \toprule
+    \textbf{Expert (EXP\_01) --- Marcus Chen} & \textbf{Novice (NOV\_01) --- Aisha Williams} \\
+    \midrule
+    You are Marcus Chen, a 38-year-old professional wedding and portrait photographer based in Chicago. You have been shooting professionally for 12 years and run your own photography business, handling weddings on weekends, engagement sessions during the week, and occasional editorial or studio portrait work.
+    &
+    You are Aisha Williams, a 21-year-old college student who takes all her photos on her iPhone 15 Pro. You have never owned a dedicated camera, and your photography knowledge comes from social media, TikTok tutorials, and trial and error on your phone. \\
+    \addlinespace
+    You own 6 cameras, including a Sony A7R V, a Canon R5, and several Fujifilm bodies. Over the last two years you have spent more than \$40{,}000 on cameras, lenses, lighting equipment, and accessories. You shoot RAW exclusively and edit your images in Lightroom and Capture One.
+    &
+    You edit photos in apps like VSCO and Lightroom Mobile and post to Instagram. You are familiar with features like portrait mode, night mode, and filters from using your phone camera regularly, and you take photos mostly in casual day-to-day situations --- around campus, with friends, and on trips. \\
+    \addlinespace
+    You understand aperture, ISO, shutter speed, dynamic range, color science, lens rendering, autofocus tracking, and post-processing workflows. You have shot in dim reception halls, bright outdoor ceremonies, churches lit only by candles, and controlled studio environments.
+    &
+    You have heard terms like aperture, ISO, and shutter speed but you don't really know what they mean. Photography interests you as a hobby, and you have recently started wondering whether a dedicated camera would let you take photos you can't easily capture with your phone. \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\subsubsection{Human Participants}
+We recruited 14 participants (7 experts, 7 novices) over a four-week period through two channels: outreach to two campus photography clubs and personal contacts who fit the screening profile. Recruitment was conducted by the authors directly; participation was voluntary and unpaid. Of 21 individuals approached, 14 met the screening criteria and completed the study; the remaining seven were screened out for not meeting the expert or novice definitions used in this work.
+
+Screening was conducted in two passes. First, each candidate was asked the qualifying questions verbally before being invited to participate: experts had to (a) own at least three cameras, (b) report having purchased camera gear in the previous two years, and (c) be able to explain at least two of \{aperture, ISO, shutter speed, RAW vs.\ JPEG\} in their own words; novices had to (a) primarily use a phone for photography, (b) have never purchased a dedicated camera, and (c) self-identify as not familiar with manual camera controls. The same questions were repeated as self-report items at the start of the Google Form for documentation and to flag any inconsistency between the verbal screen and the recorded response (none were flagged). Participants completed the form anonymously at their own pace, with no practice rounds and no time limit (see Figure~\ref{fig:google-form} in Appendix~\ref{app:google-form}). The protocol followed the same fixed pair order as the LLM sessions (5 simple $\rightarrow$ 5 moderate $\rightarrow$ 5 complex). All participants gave informed consent prior to beginning the task; identifying information was not collected and responses were stored only with the expertise label and ranking.
+
+\subsection{Stimuli}
+We worked with a pool of 11 camera attributes: price, image quality, battery life, optical zoom, weight, ease of use, manual controls, RAW support, burst speed, weather sealing, and 4K video. All camera names and specs were generated synthetically using Claude. Names were made up (e.g., ``Alvex T1,'' ``Brikon S2'') so no one could rely on brand familiarity, and attribute values were set carefully so that each pair had no obvious winner: every choice required a genuine trade-off between attributes the participant actually cared about.
+
+Complexity was defined by how many attributes were visible for a given pair (Table~\ref{tab:complexity}).
+
+\begin{table}[h]
+  \caption{Number of visible attributes per complexity level.}
+  \label{tab:complexity}
+  \centering
+  \begin{tabular}{l r}
+    \toprule
+    \textbf{Complexity} & \textbf{Visible Attributes} \\
+    \midrule
+    Simple   & 3 \\
+    Moderate & 6 \\
+    Complex  & 11 (all) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+There were 5 pairs at each complexity level, so 15 pairs per session total. Pairs within the same complexity level did not all show the same attributes. One simple pair might show price, image quality, and battery life, while another showed weight, ease of use, and manual controls. This ensured no single trade-off dominated the design and that participants had to think carefully about different combinations of features at every level. Table~\ref{tab:camera-pair} shows an example simple pair as it was presented.
+
+\begin{table}[h]
+  \caption{Example simple-condition camera pair (3 visible attributes). Each camera has a clear strength: Alvex T1 wins on price and battery, Brikon S2 wins on image quality. There is no dominant option; the participant's choice depends on which attribute they ranked highest in the priority-elicitation step.}
+  \label{tab:camera-pair}
+  \centering
+  \begin{tabular}{l r r}
+    \toprule
+    \textbf{Attribute} & \textbf{Alvex T1} & \textbf{Brikon S2} \\
+    \midrule
+    Price          & \$289   & \$499   \\
+    Image quality  & 6/10    & 9/10    \\
+    Battery life   & 18 hrs  & 11 hrs  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Session Structure}
+Each session covered all 15 pairs in one go. For LLM personas, this was a single multi-turn conversation. For human participants, the same structure was followed through the Google Form.
+
+\textbf{Step 1: Persona setup.}
+For LLM sessions, the persona's biographical prompt was loaded at the start and kept the same throughout. Nothing was edited mid-session.
+
+\textbf{Step 2: Priority ranking.}
+Before seeing any cameras, participants ranked all 11 attributes from most to least important. This ranking came from them directly before any cameras were shown, and it was the same ranking used to evaluate all 15 pairs later. The order is deliberate: if priorities were elicited after the choices, participants could rationalize the ranking to fit what they had already picked, making the value-choice comparison circular by construction. Eliciting the ranking first locks in a stated preference that the choices are then scored against.
+
+\textbf{Step 3: Camera pairs.}
+Pairs were shown one at a time in a fixed order: 5 simple pairs first, then 5 moderate, then 5 complex. Only the attributes belonging to that pair's subset were shown, written out in plain language rather than as raw variable names. After seeing each pair, participants picked one camera and reported the single attribute that drove their choice (\texttt{Choice: [camera name]}, \texttt{Decisive attribute: [attribute name]}). The decisive attribute was collected for future process-level analysis but is not used in the metrics reported here.
+
+The order never changed across sessions, so any effects from seeing earlier pairs carry through consistently for everyone. Human participants followed the same structure through the Google Form, with the priority ranking presented first and the 15 camera pairs following in the same fixed order.
+
+\subsection{Evaluation Metrics}
+
+\subsubsection{Value Choice Alignment}
+For each pair, let $D$ be the set of visible attributes on which the two cameras differ, and let $n = |D|$. We sort $D$ by the participant's Turn-1 priority ranking (most important first) and assign a linear weight $w_k = n - k + 1$ to the attribute at rank $k$, so the top-ranked differing attribute receives weight $n$ and the least-important receives weight $1$. For each $k \in \{1,\dots,n\}$, let $c_k = 1$ if the chosen camera is objectively better on attribute $k$ (per the directionality in \texttt{attributes.json}, e.g.\ lower price is better, higher image quality is better) and $c_k = 0$ otherwise. The pair score is
+\begin{equation}
+\mathrm{VCA}_{\text{pair}} = \frac{\sum_{k=1}^{n} w_k \, c_k}{\sum_{k=1}^{n} w_k}.
+\end{equation}
+
+Pair scores are aggregated upward. For a session $s$ at complexity level $\ell$ (with five pairs $P_{s,\ell}$),
+\begin{equation}
+\mathrm{VCA}_{s,\ell} = \frac{1}{5}\sum_{p \in P_{s,\ell}} \mathrm{VCA}_{\text{pair}}(p).
+\end{equation}
+For LLM personas, persona-level scores are the mean of the 10 runs; the group score for label $L \in \{\text{expert}, \text{novice}\}$ at complexity $\ell$ is the mean across the 7 personas in that label. Because each $\mathrm{VCA}_{\text{pair}} \in [0,1]$ as a weighted average of indicators, all aggregates lie in $[0,1]$ as well, where 1 indicates perfect alignment between stated priorities and observed choices and 0 indicates that every choice contradicted the stated ranking. We deliberately use a graded $[0,1]$ score rather than a binary top-attribute hit rate so that partial alignment is captured: a choice that satisfies the participant's 2nd- and 3rd-ranked priorities but not the 1st is meaningfully different from a choice that satisfies none of them, and a $[0,1]$ scale preserves that distinction while a 0/1 indicator discards it.
+
+\subsubsection{Consistency Degradation under Feature Complexity}
+Rather than fitting a regression across all three levels, we measured alignment change at two specific transitions: simple $\rightarrow$ moderate and moderate $\rightarrow$ complex. For a session $s$, the per-transition slope is
+\begin{equation}
+\Delta_{s,\,\ell_1 \rightarrow \ell_2} = \mathrm{VCA}_{s,\ell_2} - \mathrm{VCA}_{s,\ell_1}.
+\end{equation}
+A negative $\Delta$ indicates degradation across the transition; a positive $\Delta$ indicates improvement. Session-level differences were averaged across the 10 runs per LLM persona, then across the 7 personas per group, giving a mean transition slope $\bar{\Delta}$ for experts and novices in each population.
+
+\subsubsection{Human-LLM Persona Gap}
+For each of the six (label $\times$ complexity) cells, let $\mathrm{VCA}^{\text{LLM}}_{L,\ell}$ and $\mathrm{VCA}^{\text{H}}_{L,\ell}$ denote the LLM and human group means. We define the signed gap $g_{L,\ell} = \mathrm{VCA}^{\text{LLM}}_{L,\ell} - \mathrm{VCA}^{\text{H}}_{L,\ell}$ and the absolute gap $|g_{L,\ell}|$. We report two summaries: per-label gaps averaged across complexities, and the within-population expert--novice gap at each complexity. We also compute a similarity score
+\begin{equation}
+S = 1 - \frac{1}{6}\sum_{L,\ell} |g_{L,\ell}|,
+\end{equation}
+which lies in $[0,1]$ (1 = exact match across all six cells), and a Pearson correlation between LLM and human scores across the six cells. The similarity score captures whether the two populations land in the same numerical range; the correlation captures whether they respond to expertise and complexity in the same direction. The two answer different questions, and as we show in Section~\ref{sec:results}, they can disagree sharply.
+
+\subsection{Statistical Analysis}
+All analysis was descriptive and computed directly from the pairwise alignment scores. For value-choice alignment, we report group-level means across all three complexity conditions. For consistency degradation, we report the two pairwise transition differences (simple~$\rightarrow$~moderate and moderate~$\rightarrow$~complex) per group. For the human-LLM gap, we report mean signed and absolute gaps per condition, the similarity score, and the Pearson correlation between LLM and human scores across all six label-by-complexity combinations. No inferential model was fit; conclusions are drawn from the direction and magnitude of these descriptive comparisons.
+
+\section{Results}\label{sec:results}
+We report results across three metrics: value-choice alignment (VCA), consistency degradation across complexity levels, and the human-LLM persona gap.
+
+\subsection{Value-Choice Alignment}
+Table~\ref{tab:vca} summarizes mean VCA scores for each (label $\times$ complexity) condition; Figure~\ref{fig:vca-plot} plots the same scores across complexity levels for each of the four groups. LLM experts score 0.506 at simple, 0.558 at moderate, and 0.605 at complex. LLM novices score 0.657 at simple, 0.541 at moderate, and 0.558 at complex. Human experts score 0.590, 0.527, and 0.518 across the same levels; human novices score 0.590, 0.535, and 0.549. Across complexity levels, LLM personas average 0.556 (expert) and 0.585 (novice); humans average 0.545 (expert) and 0.558 (novice). The plot makes the structural finding immediately visible: the LLM-expert curve rises while every other curve declines or stays flat.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\linewidth]{vca-by-complexity.png}
+  \caption{Mean value-choice alignment across complexity levels (1 = simple, 2 = moderate, 3 = complex) for the four groups. Human experts and novices both decline as more attributes are introduced, consistent with the well-documented degradation of value-choice coherence under cognitive load. LLM experts move in the opposite direction --- alignment \emph{rises} from simple to complex --- and the expert-novice ordering crosses between simple and complex, in a way that humans never do.}
+  \Description{Line plot showing mean value-choice alignment on the y-axis against complexity level on the x-axis for four groups: human experts, human novices, LLM experts, and LLM novices. Human expert and human novice curves both decline as complexity increases. The LLM novice curve drops sharply from simple to moderate then stabilizes. The LLM expert curve rises monotonically from simple to complex, crossing the LLM novice curve between the simple and complex conditions.}
+  \label{fig:vca-plot}
+\end{figure}
+
+\begin{table}[h]
+  \caption{Mean value-choice alignment by population, label, and complexity.}
+  \label{tab:vca}
+  \centering
+  \begin{tabular}{l l r r}
+    \toprule
+    \textbf{Label} & \textbf{Complexity} & \textbf{LLM} & \textbf{Human} \\
+    \midrule
+    Expert & Simple   & 0.506 & 0.590 \\
+    Expert & Moderate & 0.558 & 0.527 \\
+    Expert & Complex  & 0.605 & 0.518 \\
+    Novice & Simple   & 0.657 & 0.590 \\
+    Novice & Moderate & 0.541 & 0.535 \\
+    Novice & Complex  & 0.558 & 0.549 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Consistency Degradation}
+For human experts, alignment drops at both transitions (simple $\rightarrow$ moderate $= -0.064$, moderate $\rightarrow$ complex $= -0.008$), consistent with degradation as more attributes are introduced. Human novices show a similar drop simple $\rightarrow$ moderate ($-0.056$) but a small recovery moderate $\rightarrow$ complex ($+0.015$). LLM experts show the opposite pattern: alignment \emph{improves} at both transitions (simple $\rightarrow$ moderate $= +0.052$, moderate $\rightarrow$ complex $= +0.047$). LLM novices degrade sharply simple $\rightarrow$ moderate ($-0.116$) before stabilizing moderate $\rightarrow$ complex ($+0.018$).
+
+\subsection{Human-LLM Persona Gap}
+Across all six (label $\times$ complexity) conditions, the mean absolute gap between LLM and human VCA scores is 0.047 and the mean signed gap is $+0.019$, yielding a similarity score of 0.953. However, the Pearson correlation between LLM and human scores across the six conditions is 0.066, effectively zero. Table~\ref{tab:gap} reports the per-condition breakdown. Signed gaps are largest at expert/simple ($-0.085$) and expert/complex ($+0.086$), and smallest at novice/moderate ($+0.006$) and novice/complex ($+0.009$): the disagreement is concentrated in the expert subgroup, while the LLM-novice scores sit close to the human-novice scores at every level except simple. The expert-novice gap within each population also diverges by complexity: at simple, LLM novices outscore LLM experts by 0.151 while humans are tied (0.0); at complex, LLM experts outscore LLM novices by 0.046 while human experts score 0.031 \emph{below} human novices, a reversal in direction.
+
+\begin{table}[h]
+  \caption{Per-condition signed gap (LLM minus human). Bold entries mark the two largest absolute gaps (both in the expert subgroup); italic entries mark the two near-zero gaps (both in the novice subgroup). The pattern --- large expert gaps with opposite signs, near-zero novice gaps --- is what produces a high aggregate similarity (0.953) alongside a near-zero pooled Pearson correlation ($r = 0.066$).}
+  \label{tab:gap}
+  \centering
+  \begin{tabular}{l l r r r}
+    \toprule
+    \textbf{Label} & \textbf{Complexity} & \textbf{LLM} & \textbf{Human} & \textbf{Gap} \\
+    \midrule
+    Expert & Simple   & 0.506 & 0.590 & \textbf{$-0.085$} \\
+    Expert & Moderate & 0.558 & 0.527 & $+0.031$ \\
+    Expert & Complex  & 0.605 & 0.518 & \textbf{$+0.086$} \\
+    Novice & Simple   & 0.657 & 0.590 & $+0.067$ \\
+    Novice & Moderate & 0.541 & 0.535 & \emph{$+0.006$} \\
+    Novice & Complex  & 0.558 & 0.549 & \emph{$+0.009$} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Label-Stratified Correlation}
+The cross-condition Pearson correlation in the previous subsection ($r = 0.066$, $n = 6$) pools both expertise labels. Computing the same statistic separately within each label is more diagnostic, because it asks whether LLM and human scores track each other \emph{within} a population as complexity changes. Across the three complexity levels (simple, moderate, complex), the within-novice correlation is $r_{\text{novice}} = +0.993$ and the within-expert correlation is $r_{\text{expert}} = -0.927$ ($n = 3$ per label). LLM novice scores rise and fall with human novice scores almost perfectly; LLM expert scores move opposite to human expert scores at nearly the same magnitude. The two effects nearly cancel when pooled, which is why the aggregate correlation collapses to roughly zero despite a within-novice fit that is essentially perfect and a within-expert fit that is strongly inverted. Both per-label correlations are computed on only three points and should be read as direction-of-effect indicators rather than precise effect sizes.
+
+\subsection{Key Findings}
+
+\textbf{Surface similarity is misleading.}
+The high similarity score (0.953) and small mean absolute gap (0.047) suggest LLM and human alignment scores are numerically close. The near-zero pooled Pearson correlation (0.066, $n=6$) shows they do not track the same pattern across conditions. Stratifying by expertise label makes the source of this disagreement explicit: within novices, LLM and human scores rise and fall together almost perfectly ($r_{\text{novice}} = +0.993$); within experts, they move in opposite directions ($r_{\text{expert}} = -0.927$). The two within-label correlations are nearly equal in magnitude and opposite in sign, so they cancel when pooled. The populations land in the same numerical range without responding to expertise or complexity in the same way, and the disagreement is concentrated in the expert subgroup.
+
+\textbf{LLM experts invert the human complexity trend.}
+Human experts score highest at simple (0.590) and lowest at complex (0.518), consistent degradation with complexity. LLM experts do the opposite: lowest at simple (0.506), highest at complex (0.605). This is the sharpest divergence in the dataset and runs counter to the expected expertise effect.
+
+\textbf{LLM novices track humans more closely than LLM experts do.}
+Novice gaps at moderate ($+0.006$) and complex ($+0.009$) are negligible, and both groups share the simple $\rightarrow$ moderate drop. The dominant LLM-novice deviation is the unusually high simple-condition score (0.657 vs.\ 0.590). Overall, LLM novice personas are a reasonable proxy for human novices; LLM expert personas are not.
+
+\textbf{The expert-novice gap reverses direction at complex.}
+Within humans, novices slightly outperform experts at complex (gap $= -0.031$). Within LLMs, experts outperform novices at the same level (gap $= +0.046$). The direction is reversed; the LLM expert persona does not replicate expert human behavior.
+
+\textbf{Largest single mismatch: expert/simple (gap $= -0.085$).}
+LLM experts score 8.5 percentage points below human experts at simple complexity. At the same level, human experts and novices are tied (0.590 each), while LLM novices massively outscore LLM experts (0.657 vs.\ 0.506).
+
+\textbf{Aggregate metrics can mask divergent decision processes.}
+A single-number similarity score would have characterized the LLM and human populations as well aligned. The condition-level breakdown and the cross-condition correlation reveal that this agreement is largely coincidental, motivating process-level rather than outcome-level evaluation of LLM-based user simulation (see Future Work).
+
+\section{Conclusion}
+Our two research questions are evaluated through three behavioral metrics: value-choice alignment, consistency degradation, and the human-LLM persona gap. The pattern across all three converges on the same conclusion.
+
+On \textbf{RQ1 (Expertise and Alignment)}, expert LLM personas do not demonstrate higher value-choice alignment than novice personas; they actually scored lower on average (0.556 vs.\ 0.585). More critically, this gap does not reflect the human pattern. Human experts and novices are tied at simple complexity (0.590 each), and human experts are slightly behind novices at complex (0.518 vs.\ 0.549, gap $= -0.031$). LLM personas show a different picture: at simple complexity, LLM novices massively outscore LLM experts (0.657 vs.\ 0.506), and at complex, LLM experts lead novices (0.605 vs.\ 0.558, gap $= +0.046$) --- the inverse of the human pattern. Therefore, labeling a persona as an ``expert'' through prompting does not result in expert-like decision-making. Notably, this failure is asymmetric: LLM novice personas are a reasonable proxy for human novices, particularly at moderate and complex conditions where gaps are negligible ($+0.006$ and $+0.009$, respectively); LLM expert personas are not.
+
+On \textbf{RQ2 (Complexity and Robustness)}, the populations diverge sharply and in opposite directions. Human experts show the expected degradation as complexity rises (simple~$\rightarrow$~moderate $= -0.064$, moderate~$\rightarrow$~complex $= -0.008$). LLM experts show the opposite: alignment improves at both transitions ($+0.052$, $+0.047$), directly inverting the human degradation pattern. LLM experts do not exhibit greater robustness to complexity in any human-like sense; they exhibit a fundamentally different response to it. LLM novices, by contrast, degrade sharply from simple to moderate ($-0.116$) before stabilizing (moderate~$\rightarrow$~complex $= +0.018$), which at least shares the direction of human novice degradation ($-0.056$), even if the magnitude differs.
+
+The human-LLM persona gap metric shows why this matters. Aggregate scores look fine, with a similarity of 0.953 and a mean absolute gap of just 0.047. But the cross-condition Pearson correlation is near zero ($r = 0.066$), which means the two populations land in the same numerical range by coincidence, not because they are responding to expertise and complexity the same way. The largest gaps fall exactly where expert behavior diverges most, at simple ($-0.085$) and complex ($+0.086$) complexity. We call this the \emph{single-number trap}: any one-shot summary of LLM-human agreement --- a similarity score, a mean absolute gap, an overall accuracy --- can be high while the underlying decision processes are completely different. A reviewer who saw only the 0.953 similarity would conclude these LLM personas are a strong proxy for human users; the 0.066 correlation, the inverted complexity trend in LLM experts, and the expert-novice sign reversal at complex complexity all say the opposite.
+
+These findings suggest that current persona prompting does not ground ``expertise'' in the way that produces human-like decision behavior, and that aggregate alignment metrics can obscure this. For HCI work using LLM-based synthetic users, the implication is that outcome-level proxies (e.g., choice accuracy, preference match) should not by themselves be treated as evidence of behavioral validity; researchers should evaluate whether synthetic users replicate the \emph{patterns} of degradation, expertise, and trade-off that motivate the simulation in the first place. Process-level validation, scaled across model families and decision domains, is the more demanding bar this work points toward.
+
+\section{Limitations}
+Several limitations should be considered when interpreting these findings.
+First, our human sample is small ($N = 14$; 7 experts, 7 novices), recruited through convenience sampling without compensation. Statistical power is limited and the participant pool may be biased toward photography enthusiasts.
+
+Second, all LLM data come from a single model (Gemini 2.5 Flash-Lite) under a single prompting configuration. Behavior may differ substantially across model families, sizes, or providers; our results should not be read as a general claim about ``LLM personas,'' only about this model in this configuration.
+
+Third, the camera stimuli were generated by a different LLM (Claude) than the one being tested. This avoids hand-curated stimuli leaking experimenter expectations, but introduces a subtle distributional alignment between stimuli and at least one model family that could affect cross-model replication.
+
+Fourth, we use a single, low-stakes decision domain (consumer camera purchasing). Whether the inverted complexity trend in LLM experts generalizes to higher-stakes domains where novice/expert differences are more consequential (medical, financial, legal) is an open question this work cannot answer.
+
+Fifth, we report descriptive statistics only and do not fit a mixed-effects or other inferential model. The directional effects we highlight, particularly the inverted complexity trend in LLM experts and the sign reversal of the expert-novice gap at complex, should therefore be treated as suggestive rather than confirmatory. Relatedly, the cross-condition Pearson correlation is computed on only six (label $\times$ complexity) cells, and the label-stratified correlations ($r_{\text{novice}} = +0.993$, $r_{\text{expert}} = -0.927$) are computed on only three cells per label; these should be read as direction-of-effect indicators rather than precise population-level estimates.
+
+Sixth, the priority ranking is treated as a stable preference, but participants completed it once without practice rounds and may have ranked differently with reflection. The alignment scores are sensitive to this single-shot ranking.
+
+Finally, pair order was fixed (simple $\rightarrow$ moderate $\rightarrow$ complex) for both populations. This controls between-condition order effects but bundles session-internal learning, fatigue, and anchoring into the complexity manipulation, so they cannot be separated from it.
+
+\section{Future Work}
+These findings motivate several directions.
+
+First, the divergent complexity trends in RQ2 are descriptive. The natural confirmatory test is a mixed-effects logistic regression with persona label, complexity, and their interaction as fixed effects, and persona nested within label as a random effect. This requires enlarging the human sample; until that is done, the inverted trend in LLM experts remains a strong suggestion rather than an established effect.
+
+Second, our results are anchored to a single model. Replicating the same protocol across model families (GPT-class, Claude-class, open-weight models) and sizes will determine whether value-choice degradation under complexity, and its inversion in LLM experts, is a property of one model or a general property of persona-conditioned LLMs. The human side requires no changes.
+
+Third, the contrast between high aggregate similarity ($0.953$) and near-zero per-condition correlation ($r = 0.066$) is itself a methodological finding. HCI evaluation of LLM-based synthetic users needs metrics that capture decision \emph{processes} (which attributes drive each choice, how priority is traded against attribute values, where the model deviates from its own stated ranking), rather than only outcome-level alignment. Developing and validating such metrics is, in our view, the most important next step for the validity of LLM persona research.
+
+Fourth, our domain has low decision stakes. Extending the protocol to higher-stakes domains, where expert/novice differences carry real consequences, will test whether the LLM-expert-improving-with-complexity pattern is general or an artifact of low-stakes consumer choice. This is also the setting where persona validity matters most.
+
+A fifth, more speculative direction addresses RQ1 directly: whether richer expertise grounding (retrieval over domain knowledge, few-shot expert traces, or chain-of-thought elicitation of expert reasoning) can close the gap between LLM and human expert behavior.
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+% \begin{acks}
+% Acknowledgments go here.
+% \end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample}
+
+%%
+%% Appendix.
+\appendix
+
+\section{Google Form Used by Human Participants}\label{app:google-form}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=\textwidth]{google-form-screenshots.png}
+  \caption{The Google Form used by human participants. Left: the screening item and the priority-ranking matrix over all 11 attributes. Right: example camera-pair items (one simple, one complex) showing only the attributes belonging to that pair. The form mirrors the LLM session structure: ranking first, then 15 pairs in the fixed simple~$\rightarrow$~moderate~$\rightarrow$~complex order.}
+  \Description{Composite screenshot of the Google Form used by human participants. The left panel shows the expertise screening item followed by a matrix in which respondents rank all eleven camera attributes from most to least important. The right panel shows two example camera-pair items: a simple pair with three visible attributes and a complex pair with all eleven visible attributes. Each pair lists the two camera names, their attribute values, and the response fields for choice and decisive attribute.}
+  \label{fig:google-form}
+\end{figure*}
+
+\end{document}
